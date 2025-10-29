@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --primary: #00d4ff;
+  --secondary: #ff00ff;
+  --accent: #9d00ff;
 }
 
 @theme inline {
@@ -12,15 +15,87 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-purple-900 via-black to-purple-900 text-white overflow-x-hidden;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Neon glow effect */
+@keyframes neon-glow {
+  0%, 100% {
+    text-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary), 0 0 30px var(--primary);
+  }
+  50% {
+    text-shadow: 0 0 20px var(--primary), 0 0 30px var(--primary), 0 0 40px var(--secondary);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px var(--primary), 0 0 10px var(--primary);
+  }
+  50% {
+    box-shadow: 0 0 10px var(--primary), 0 0 20px var(--secondary);
+  }
+}
+
+@keyframes mosaic {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+.neon-text {
+  color: var(--primary);
+  text-shadow: 0 0 10px var(--primary), 0 0 20px var(--secondary);
+  font-weight: 900;
+}
+
+.neon-border {
+  border: 2px solid var(--primary);
+  box-shadow: 0 0 10px var(--primary), inset 0 0 10px rgba(0, 212, 255, 0.3);
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+.pulse-animation {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Loading animation */
+@keyframes spin-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.loading-bar {
+  height: 4px;
+  background: linear-gradient(90deg, #00d4ff, #ff00ff, #9d00ff, #00d4ff);
+  background-size: 200% 100%;
+  animation: spin-gradient 1.5s ease infinite;
 }
