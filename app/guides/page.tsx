@@ -4,11 +4,11 @@ import Footer from '../components/Footer';
 import BackgroundAnimation from '../components/BackgroundAnimation';
 
 export const metadata: Metadata = {
-  title: 'Game Guides & Tips - Steal Brainrot 67',
+  title: 'Steal Brainrot 67 Guides & Tips - Strategies',
   description: 'Complete guides and tips for Steal Brainrot 67. Learn how to collect all items, unlock item 67, complete challenges, and master the game strategies.',
   keywords: 'Steal Brainrot guides, tips, walkthrough, item 67 guide, game strategies, meme collection',
   openGraph: {
-    title: 'Game Guides & Tips - Steal Brainrot 67',
+    title: 'Steal Brainrot 67 Guides & Tips - Strategies',
     description: 'Complete guides and tips for Steal Brainrot 67. Learn game strategies and unlock legendary items.',
     url: 'https://stealbrainrot67.com/guides',
     type: 'website',
@@ -153,10 +153,6 @@ export default function Guides() {
                 {
                   q: 'Can I trade items with other players?',
                   a: 'Yes, multiplayer trading is available once you reach level 5. Visit the Trading Post to exchange items with other collectors.'
-                },
-                {
-                  q: 'What happens if I lose my progress?',
-                  a: 'Your progress is automatically saved to our servers. Even if you close the browser, your save will be there when you return.'
                 },
                 {
                   q: 'Are there mobile and PC versions?',

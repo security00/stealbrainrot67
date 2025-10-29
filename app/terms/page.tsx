@@ -4,8 +4,9 @@ import Footer from '../components/Footer';
 import BackgroundAnimation from '../components/BackgroundAnimation';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service - Steal Brainrot 67',
-  description: 'Terms of Service for Steal Brainrot 67. Read our terms and conditions for using our game.',
+  title: 'Terms of Service for Steal Brainrot 67 Game',
+  description: 'Terms of Service for Steal Brainrot 67. Learn your rights and responsibilities, account rules, and limitations when accessing and playing our online game.',
+  keywords: 'Steal Brainrot 67 terms, terms of service, rules, account policy, legal',
   robots: { index: true, follow: true }
 };
 

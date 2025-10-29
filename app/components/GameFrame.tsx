@@ -46,18 +46,8 @@ export default function GameFrame({ src, title = 'Steal Brainrot 67' }: GameFram
   };
 
   return (
-    <div className="w-full mt-4">
-      <div className="flex flex-col gap-4">
-        {/* Title */}
-        <div className="text-center">
-          <h2 className="text-3xl md:text-4xl font-black neon-text mb-2">
-            {title}
-          </h2>
-          <p className="text-gray-400 text-sm md:text-base">
-            Collect rare Roblox memes and unlock the legendary item 67. Play now!
-          </p>
-        </div>
-
+    <div className="w-full mt-0">
+      <div className="flex flex-col gap-3">
         {/* Loading Bar */}
         {isLoading && (
           <div className="w-full h-1 bg-gray-800 rounded-full overflow-hidden">
@@ -93,37 +83,14 @@ export default function GameFrame({ src, title = 'Steal Brainrot 67' }: GameFram
           </div>
         </div>
 
-        {/* Quick Tips */}
-        <div className="bg-purple-900/30 border border-purple-500/50 rounded-lg p-4 md:p-6">
-          <h3 className="text-lg font-bold text-purple-400 mb-3">💡 Quick Tips</h3>
-          <ul className="space-y-2 text-sm text-gray-300">
-            <li>• <strong>Find Item 67:</strong> The rarest item in the game! Search hidden locations.</li>
-            <li>• <strong>Collect All Items:</strong> Gather all meme items to unlock special rewards.</li>
-            <li>• <strong>Time Challenges:</strong> Complete daily challenges for bonus points.</li>
-            <li>• <strong>Secret Locations:</strong> Explore every corner of the map to find Easter eggs.</li>
-          </ul>
-        </div>
-
-        {/* Share Buttons */}
-        <div className="flex flex-wrap gap-3 justify-center">
-          <button
-            onClick={() => shareGame('x')}
-            className="bg-black border border-cyan-400 hover:bg-cyan-400/20 text-cyan-400 px-4 py-2 rounded-lg font-semibold transition-colors flex items-center gap-2"
-          >
-            𝕏 Share on X
-          </button>
-          <button
-            onClick={() => shareGame('tiktok')}
-            className="bg-black border border-pink-500 hover:bg-pink-500/20 text-pink-400 px-4 py-2 rounded-lg font-semibold transition-colors flex items-center gap-2"
-          >
-            ♪ TikTok
-          </button>
-          <button
-            onClick={() => shareGame('youtube')}
-            className="bg-black border border-red-500 hover:bg-red-500/20 text-red-400 px-4 py-2 rounded-lg font-semibold transition-colors flex items-center gap-2"
-          >
-            ▶ YouTube
-          </button>
+        {/* Title & Description - Below Game */}
+        <div className="text-center mt-2">
+          <h2 className="text-2xl md:text-3xl font-black neon-text mb-1">
+            {title}
+          </h2>
+          <p className="text-gray-400 text-xs md:text-sm">
+            Collect rare Roblox memes and unlock the legendary item 67. Play now!
+          </p>
         </div>
       </div>
     </div>

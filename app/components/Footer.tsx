@@ -31,17 +31,12 @@ export default function Footer() {
                   Guides
                 </Link>
               </li>
-              <li>
-                <Link href="/about" className="text-gray-400 hover:text-cyan-400 transition-colors text-sm">
-                  About Us
-                </Link>
-              </li>
             </ul>
           </div>
 
-          {/* Legal */}
+          {/* Legal & Contact */}
           <div>
-            <h3 className="text-lg font-bold text-cyan-400 mb-4">Legal</h3>
+            <h3 className="text-lg font-bold text-cyan-400 mb-4">Support</h3>
             <ul className="space-y-2">
               <li>
                 <Link href="/privacy" className="text-gray-400 hover:text-cyan-400 transition-colors text-sm">
@@ -55,7 +50,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="mailto:support@stealbrainrot67.com" className="text-gray-400 hover:text-cyan-400 transition-colors text-sm">
-                  Contact
+                  Email Support
                 </a>
               </li>
             </ul>

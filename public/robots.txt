@@ -3,25 +3,6 @@
 
 User-agent: *
 Allow: /
-Disallow: /admin
-Disallow: /api/
-Disallow: /private/
-
-# Specific rules for search engines
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Slurp
-Allow: /
-
-# Crawl delay
-Crawl-delay: 1
 
 # Sitemap location
 Sitemap: https://stealbrainrot67.com/sitemap.xml
-
-# Comment: This robots.txt file allows search engine crawlers to index the entire
-# public content of Steal Brainrot 67 website while protecting admin and API routes.

@@ -33,12 +33,6 @@ export default function Header() {
           >
             Guides
           </Link>
-          <Link
-            href="/about"
-            className="text-white hover:text-cyan-400 transition-colors font-semibold"
-          >
-            About
-          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -68,13 +62,6 @@ export default function Header() {
             onClick={() => setMobileMenuOpen(false)}
           >
             Guides
-          </Link>
-          <Link
-            href="/about"
-            className="block px-4 py-2 text-white hover:text-cyan-400 transition-colors"
-            onClick={() => setMobileMenuOpen(false)}
-          >
-            About
           </Link>
         </div>
       )}

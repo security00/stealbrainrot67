@@ -15,13 +15,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Steal Brainrot 67 - Rare Meme Game",
+  title: "Steal Brainrot 67 - Rare Meme Collection Game",
   description: "Play Steal Brainrot 67 online - Collect rare Roblox memes and unlock the legendary 67 item. Free unblocked game with guides and tips.",
   keywords: "Roblox, Steal a Brainrot, game, meme, online game, unblocked",
   authors: [{ name: "Steal Brainrot 67" }],
   metadataBase: new URL("https://stealbrainrot67.com"),
   openGraph: {
-    title: "Steal Brainrot 67 - Rare Meme Game",
+    title: "Steal Brainrot 67 - Rare Meme Collection Game",
     description: "Play Steal Brainrot 67 online - Collect rare Roblox memes and unlock the legendary 67 item.",
     url: "https://stealbrainrot67.com",
     type: "website",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Steal Brainrot 67 - Rare Meme Game",
+    title: "Steal Brainrot 67 - Rare Meme Collection Game",
     description: "Play Steal Brainrot 67 online - Collect rare Roblox memes and unlock the legendary 67 item.",
   },
   robots: {

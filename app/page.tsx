@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import GameFrame from './components/GameFrame';
@@ -27,9 +28,14 @@ export default function Home() {
 
       <main className="min-h-screen pt-24 pb-8 px-4 md:px-8 relative z-10">
         <div className="w-full max-w-6xl mx-auto">
-          {/* Hero Section */}
+          {/* Game Section - Top Priority */}
+          <section className="mb-12 md:mb-16">
+            <GameFrame src="https://yoplay.io/steal-brainrots.embed" title="Steal Brainrot 67 - Play Now" />
+          </section>
+
+          {/* Hero Section - Below Game */}
           <section className="text-center mb-16 md:mb-20 mt-8 md:mt-12">
-            <div className="mb-8 md:mb-12 float-animation">
+            <div className="mb-8 md:mb-12">
               <h1 className="text-5xl md:text-7xl font-black neon-text mb-6 md:mb-8">
                 STEAL BRAINROT 67
               </h1>
@@ -57,11 +63,6 @@ export default function Home() {
                 <div className="text-xs md:text-sm text-gray-400 mt-2">Free</div>
               </div>
             </div>
-          </section>
-
-          {/* Game Section */}
-          <section className="mb-20 md:mb-24">
-            <GameFrame src="https://yoplay.io/steal-brainrots.embed" title="Steal Brainrot 67 - Play Now" />
           </section>
 
           {/* Features Section */}
@@ -171,12 +172,18 @@ export default function Home() {
               Join over 1 million players in the ultimate meme collection adventure. Play free now, no account required!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center">
-              <button className="bg-cyan-500 hover:bg-cyan-600 text-black font-bold px-8 md:px-10 py-3 md:py-4 rounded-lg transition-colors text-base md:text-lg neon-border">
+              <Link
+                href="/"
+                className="bg-cyan-500 hover:bg-cyan-600 text-black font-bold px-8 md:px-10 py-3 md:py-4 rounded-lg transition-colors text-base md:text-lg neon-border inline-block text-center"
+              >
                 🎮 Play Now
-              </button>
-              <button className="bg-purple-600 hover:bg-purple-700 text-white font-bold px-8 md:px-10 py-3 md:py-4 rounded-lg transition-colors text-base md:text-lg">
+              </Link>
+              <Link
+                href="/guides"
+                className="bg-purple-600 hover:bg-purple-700 text-white font-bold px-8 md:px-10 py-3 md:py-4 rounded-lg transition-colors text-base md:text-lg inline-block text-center"
+              >
                 📖 View Guides
-              </button>
+              </Link>
             </div>
           </section>
         </div>
