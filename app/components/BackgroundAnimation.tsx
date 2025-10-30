@@ -36,15 +36,9 @@ export default function BackgroundAnimation() {
     return (
       <div className="fixed inset-0 -z-10 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-black to-purple-900/40"></div>
-        <div className="absolute inset-0 opacity-20">
-          <svg className="w-full h-full" width="100%" height="100%">
-            <defs>
-              <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="cyan" strokeWidth="0.5" opacity="0.3" />
-              </pattern>
-            </defs>
-            <rect width="100%" height="100%" fill="url(#grid)" />
-          </svg>
+        <div className="absolute inset-0 opacity-20" aria-hidden="true">
+          {/* Decorative grid via CSS background to avoid <svg> being flagged as image */}
+          <div className="w-full h-full bg-grid" />
         </div>
       </div>
     );
@@ -56,15 +50,9 @@ export default function BackgroundAnimation() {
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-black to-purple-900/40"></div>
 
       {/* Animated grid */}
-      <div className="absolute inset-0 opacity-20">
-        <svg className="w-full h-full" width="100%" height="100%">
-          <defs>
-            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="cyan" strokeWidth="0.5" opacity="0.3" />
-            </pattern>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#grid)" />
-        </svg>
+      <div className="absolute inset-0 opacity-20" aria-hidden="true">
+        {/* Decorative grid via CSS background to avoid <svg> being flagged as image */}
+        <div className="w-full h-full bg-grid" />
       </div>
 
       {/* Floating squares (meme wall effect) */}

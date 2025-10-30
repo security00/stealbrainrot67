@@ -6,7 +6,7 @@ import BackgroundAnimation from '../components/BackgroundAnimation';
 export const metadata: Metadata = {
   title: 'Steal Brainrot 67 Guides & Tips - Strategies',
   description: 'Complete guides and tips for Steal Brainrot 67. Learn how to collect all items, unlock item 67, complete challenges, and master the game strategies.',
-  keywords: 'Steal Brainrot guides, tips, walkthrough, item 67 guide, game strategies, meme collection',
+  keywords: 'steal brainrot, steal brainrot 67, brainrot 67, guides, tips, walkthrough, item 67 guide',
   openGraph: {
     title: 'Steal Brainrot 67 Guides & Tips - Strategies',
     description: 'Complete guides and tips for Steal Brainrot 67. Learn game strategies and unlock legendary items.',
@@ -98,11 +98,11 @@ export default function Guides() {
           {/* Header */}
           <section className="text-center mb-12 mt-8">
             <h1 className="text-5xl md:text-6xl font-black neon-text mb-4">
-              GAME GUIDES
+              STEAL BRAINROT GUIDES
             </h1>
             <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-              Master Steal Brainrot 67 with our comprehensive guides, tips, and strategies.
-              Learn from experienced players and unlock all secrets of the meme realm.
+              Master <strong>steal brainrot</strong> and <strong>steal brainrot 67</strong> with our comprehensive guides, tips, and strategies.
+              These <strong>steal brainrot 67</strong> walkthroughs cover beginner to pro routes so you unlock item 67 faster.
             </p>
           </section>
 

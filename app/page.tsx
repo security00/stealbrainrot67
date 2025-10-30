@@ -8,7 +8,7 @@ import BackgroundAnimation from './components/BackgroundAnimation';
 export const metadata: Metadata = {
   title: 'Steal Brainrot 67 - Play Free Meme Game Online',
   description: 'Play Steal Brainrot 67 online for free. Collect rare Roblox memes and unlock the legendary item 67. No download required, play instantly in your browser.',
-  keywords: 'Steal Brainrot, Roblox game, free online game, meme game, item 67, unblocked games, brainrot 67',
+  keywords: 'steal brainrot, steal brainrot 67, brainrot 67, roblox brainrot, free online game, meme game',
   openGraph: {
     title: 'Steal Brainrot 67 - Play Free Meme Game Online',
     description: 'Play Steal Brainrot 67 online for free. Collect rare Roblox memes and unlock the legendary item 67.',
@@ -44,7 +44,8 @@ export default function Home() {
               </p>
               <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg mb-8 md:mb-10 leading-relaxed">
                 Embark on an epic adventure to collect rare Roblox memes and unlock the legendary item 67.
-                Play free online, no download needed. Join thousands of meme collectors worldwide.
+                Play free online, no download needed. Join thousands of meme collectors worldwide and play
+                <span className="mx-1 font-semibold text-cyan-300">steal brainrot 67</span> right in your browser.
               </p>
             </div>
 
@@ -161,6 +162,24 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </section>
+
+          {/* SEO: About Steal Brainrot */}
+          <section className="bg-black/40 border border-cyan-500/30 rounded-lg p-8 md:p-10 mb-16">
+            <h2 className="text-2xl md:text-3xl font-black text-cyan-400 mb-4">About Steal Brainrot</h2>
+            <p className="text-gray-300 leading-relaxed mb-4">
+              Steal Brainrot is a fast-paced, browser-based meme collection game where you explore, trade, and battle to complete your collection.
+              In Steal Brainrot 67, your quest centers on unlocking the legendary item 67 while mastering puzzles and boss fights. Whether you are
+              brand new to <strong>steal brainrot</strong> or a veteran chasing perfect runs, you can play instantly on any device—no download required.
+            </p>
+            <p className="text-gray-300 leading-relaxed">
+              Play <strong>steal brainrot</strong> free online, discover rare items, and team up with friends to climb the leaderboard. Our
+              <Link href="/guides" className="text-cyan-400 hover:text-cyan-300 font-semibold"> steal brainrot guides </Link>
+              cover efficient routes, trading tips, and late‑game strategies so you can progress faster in <strong>steal brainrot 67</strong>. Jump in now and start collecting.
+            </p>
+            <p className="text-gray-300 leading-relaxed mt-4">
+              Looking for the fastest way to get started? Just launch the game above and enjoy <strong>steal brainrot 67</strong> with zero setup.
+            </p>
           </section>
 
           {/* Call to Action */}

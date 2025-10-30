@@ -13,7 +13,8 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold neon-text mb-4">STEAL BRAINROT 67</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              The ultimate rare meme collection game. Play online, collect legendary items, and become the ultimate brainrot master.
+              Steal Brainrot is the ultimate rare meme collection game. Play online, collect legendary items, and become the ultimate brainrot master.
+              Play <span className="font-semibold text-cyan-300">steal brainrot 67</span> free in your browser.
             </p>
           </div>
 
