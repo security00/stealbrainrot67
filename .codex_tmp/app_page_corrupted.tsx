@@ -75,7 +75,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {/* Feature 1 */}
               <div className="bg-purple-900/20 border border-cyan-500/50 rounded-lg p-6 md:p-8 hover:border-cyan-400 transition-colors">
-                <div className="text-4xl md:text-5xl mb-4">*</div>
+                <div className="text-4xl md:text-5xl mb-4">馃幃</div>
                 <h3 className="text-lg md:text-xl font-bold text-cyan-400 mb-3">Instant Play</h3>
                 <p className="text-gray-400 text-sm md:text-base leading-relaxed">
                   Play directly in your browser. No downloads, no installations. Start playing in seconds and collect memes immediately.
@@ -93,7 +93,7 @@ export default function Home() {
 
               {/* Feature 3 */}
               <div className="bg-purple-900/20 border border-cyan-500/50 rounded-lg p-6 md:p-8 hover:border-cyan-400 transition-colors">
-                <div className="text-4xl md:text-5xl mb-4">*</div>
+                <div className="text-4xl md:text-5xl mb-4">馃弳</div>
                 <h3 className="text-lg md:text-xl font-bold text-magenta-400 mb-3">Daily Challenges</h3>
                 <p className="text-gray-400 text-sm md:text-base leading-relaxed">
                   Complete daily quests and challenges to earn bonus points, unlock achievements, and climb the global leaderboard.
@@ -102,7 +102,7 @@ export default function Home() {
 
               {/* Feature 4 */}
               <div className="bg-purple-900/20 border border-cyan-500/50 rounded-lg p-6 md:p-8 hover:border-cyan-400 transition-colors">
-                <div className="text-4xl md:text-5xl mb-4">*</div>
+                <div className="text-4xl md:text-5xl mb-4">馃寪</div>
                 <h3 className="text-lg md:text-xl font-bold text-cyan-400 mb-3">Cross-Platform</h3>
                 <p className="text-gray-400 text-sm md:text-base leading-relaxed">
                   Play on desktop, tablet, or mobile. Responsive design ensures smooth gameplay on any device with internet connection.
@@ -111,7 +111,7 @@ export default function Home() {
 
               {/* Feature 5 */}
               <div className="bg-purple-900/20 border border-cyan-500/50 rounded-lg p-6 md:p-8 hover:border-cyan-400 transition-colors">
-                <div className="text-4xl md:text-5xl mb-4">*</div>
+                <div className="text-4xl md:text-5xl mb-4">馃懃</div>
                 <h3 className="text-lg md:text-xl font-bold text-purple-400 mb-3">Multiplayer</h3>
                 <p className="text-gray-400 text-sm md:text-base leading-relaxed">
                   Connect with players worldwide. Trade items, join factions, and compete in real-time multiplayer battles for glory.
@@ -120,7 +120,7 @@ export default function Home() {
 
               {/* Feature 6 */}
               <div className="bg-purple-900/20 border border-cyan-500/50 rounded-lg p-6 md:p-8 hover:border-cyan-400 transition-colors">
-                <div className="text-4xl md:text-5xl mb-4">*</div>
+                <div className="text-4xl md:text-5xl mb-4">馃攼</div>
                 <h3 className="text-lg md:text-xl font-bold text-magenta-400 mb-3">Secure & Safe</h3>
                 <p className="text-gray-400 text-sm md:text-base leading-relaxed">
                   Your account and progress are protected. No viruses, no malware. Play worry-free with our advanced security systems.
@@ -131,7 +131,7 @@ export default function Home() {
 
           {/* How to Get Item 67 */}
           <section className="bg-purple-900/20 border border-purple-500/50 rounded-lg p-8 md:p-12 mb-20 md:mb-24">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-purple-400 mb-8 md:mb-10">How to Unlock Item 67</h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-purple-400 mb-8 md:mb-10">馃幆 How to Unlock Item 67</h2>
             <div className="space-y-6 md:space-y-8">
               <div className="flex gap-4 md:gap-6">
                 <div className="flex-shrink-0 w-8 h-8 md:w-10 md:h-10 rounded-full bg-cyan-500 flex items-center justify-center font-bold text-black text-sm md:text-base">1</div>
@@ -170,12 +170,12 @@ export default function Home() {
             <p className="text-gray-300 leading-relaxed mb-4">
               Steal Brainrot is a fast-paced, browser-based meme collection game where you explore, trade, and battle to complete your collection.
               In Steal Brainrot 67, your quest centers on unlocking the legendary item 67 while mastering puzzles and boss fights. Whether you are
-              brand new to <strong>steal brainrot</strong> or a veteran chasing perfect runs, you can play instantly on any device-no download required.
+              brand new to <strong>steal brainrot</strong> or a veteran chasing perfect runs, you can play instantly on any device鈥攏o download required.
             </p>
             <p className="text-gray-300 leading-relaxed">
               Play <strong>steal brainrot</strong> free online, discover rare items, and team up with friends to climb the leaderboard. Our
               <Link href="/guides" className="text-cyan-400 hover:text-cyan-300 font-semibold"> steal brainrot guides </Link>
-              cover efficient routes, trading tips, and late-game strategies so you can progress faster in <strong>steal brainrot 67</strong>. Jump in now and start collecting.
+              cover efficient routes, trading tips, and late鈥慻ame strategies so you can progress faster in <strong>steal brainrot 67</strong>. Jump in now and start collecting.
             </p>
             <p className="text-gray-300 leading-relaxed mt-4">
               Looking for the fastest way to get started? Just launch the game above and enjoy <strong>steal brainrot 67</strong> with zero setup.
@@ -195,13 +195,13 @@ export default function Home() {
                 href="/"
                 className="bg-cyan-500 hover:bg-cyan-600 text-black font-bold px-8 md:px-10 py-3 md:py-4 rounded-lg transition-colors text-base md:text-lg neon-border inline-block text-center"
               >
-                Play Now
+                馃幃 Play Now
               </Link>
               <Link
                 href="/guides"
                 className="bg-purple-600 hover:bg-purple-700 text-white font-bold px-8 md:px-10 py-3 md:py-4 rounded-lg transition-colors text-base md:text-lg inline-block text-center"
               >
-                View Guides
+                馃摉 View Guides
               </Link>
             </div>
           </section>
