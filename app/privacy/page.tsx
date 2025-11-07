@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Privacy Policy for Steal Brainrot 67 Game',
   description: 'Privacy Policy for Steal Brainrot 67. How we collect, use, and protect your personal info and gameplay data, our cookie practices, and your privacy rights.',
   keywords: 'Steal Brainrot 67 privacy, data protection, cookies policy, personal information, gameplay data',
-  robots: { index: true, follow: true }
+  robots: { index: true, follow: true },
   alternates: { canonical: 'https://stealbrainrot67.com/privacy' }
 };
 
