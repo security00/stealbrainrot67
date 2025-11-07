@@ -11,8 +11,23 @@ export const metadata: Metadata = {
   description: 'Item details: cost, income per second, drop rate and ROI.'
 };
 
-export default function ItemDetail({ params }: { params: { slug: string } }) {
-  const it = findBySlug(params.slug);
+
+// Pre-generate all item detail pages (SSG)
+export function generateStaticParams() {
+  // Emit unique slugs for id, name and aliases to be robust across links
+  const set = new Set<string>();
+  items.forEach(it => {
+    set.add(it.id);
+    set.add(slugify(it.name));
+    (it.aliases || []).forEach(a => set.add(slugify(a)));
+  });
+  return Array.from(set).map(slug => ({ slug }));
+}
+
+export default async function ItemDetail({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const it = findBySlug(slug) ||
+    items.find(x => x.id === slug || x.name === slug || (x.aliases || []).some(a => a === slug));
     if (!it) {
     notFound();
   }
