@@ -91,6 +91,10 @@ export default function GameFrame({ src, title = 'Steal Brainrot 67' }: GameFram
           <p className="text-gray-400 text-xs md:text-sm">
             Collect rare Roblox memes and unlock the legendary item 67. Play now!
           </p>
+          {/* Disclaimer to align user intent: this is a browser demo, official game lives on Roblox */}
+          <p className="text-gray-500 text-[11px] md:text-xs mt-2">
+            This embedded player is a browser practice demo. For the official experience, play Steal a Brainrot on Roblox via the button below.
+          </p>
         </div>
       </div>
     </div>

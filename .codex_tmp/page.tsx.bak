@@ -4,12 +4,11 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import GameFrame from './components/GameFrame';
 import BackgroundAnimation from './components/BackgroundAnimation';
-import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Steal Brainrot 67 - Play Free Meme Game Online',
   description: 'Play Steal Brainrot 67 online for free. Collect rare Roblox memes and unlock the legendary item 67. No download required, play instantly in your browser.',
-  keywords: 'steal brainrot, steal brainrot 67, brainrot 67, roblox brainrot, free online game, meme game, how to get 67, unlock 67, item 67 guide',
+  keywords: 'steal brainrot, steal brainrot 67, brainrot 67, roblox brainrot, free online game, meme game',
   openGraph: {
     title: 'Steal Brainrot 67 - Play Free Meme Game Online',
     description: 'Play Steal Brainrot 67 online for free. Collect rare Roblox memes and unlock the legendary item 67.',
@@ -32,50 +31,6 @@ export default function Home() {
           {/* Game Section - Top Priority */}
           <section className="mb-12 md:mb-16">
             <GameFrame src="https://steal-brainrot.io/steal-brainrot.embed" title="Steal Brainrot 67 - Play Now" />
-          </section>
-
-          {/* 67 Quick Guide - Directly Under Game Embed */}
-          <section className="mb-12 md:mb-14" aria-labelledby="home-67-quick">
-            <div className="bg-black/50 border border-cyan-500/40 rounded-lg p-6 md:p-8">
-              <h2 id="home-67-quick" className="text-2xl md:text-3xl font-black text-cyan-400 mb-4">
-                How To Get 67 (Quick Guide)
-              </h2>
-              <p className="text-gray-300 mb-4">
-                Landing here from searching <strong>“STEAL BRAINROT 67”</strong>? Here’s the short version:
-              </p>
-              <ol className="list-decimal pl-5 space-y-2 text-gray-300">
-                <li>Reach mid-game (around level 20) and unlock late-game areas.</li>
-                <li>Farm budget during events (Admin Abuse, Taco Tuesday) to boost income fast.</li>
-                <li>Buy Admin Lucky Blocks when available and roll for 67 (~0.25% drop).</li>
-                <li>Alternatively, trade with players or finish the final boss route.</li>
-              </ol>
-              <div className="mt-6 flex flex-col sm:flex-row gap-3">
-                {/* Primary: Official Roblox CTA */}
-                <a
-                  href="https://www.roblox.com/discover/?Keyword=Steal%20a%20Brainrot"
-                  target="_blank"
-                  rel="noopener nofollow"
-                  aria-label="Play Steal a Brainrot on Roblox (opens in new tab)"
-                  className="bg-yellow-300 hover:bg-yellow-400 text-black font-extrabold px-6 py-3 rounded-lg text-center"
-                  title="Play on Roblox"
-                  data-analytics-id="home_cta_roblox"
-                >
-                  Play on Roblox
-                </a>
-                <Link
-                  href="/items/67"
-                  className="bg-cyan-500 hover:bg-cyan-600 text-black font-bold px-6 py-3 rounded-lg text-center"
-                >
-                  View 67 Item Details
-                </Link>
-                <Link
-                  href="/guides/how-to-get-67"
-                  className="bg-purple-600 hover:bg-purple-700 text-white font-bold px-6 py-3 rounded-lg text-center"
-                >
-                  Step-by-Step Guide
-                </Link>
-              </div>
-            </div>
           </section>
 
           {/* Hero Section - Below Game */}
@@ -251,23 +206,7 @@ export default function Home() {
             </div>
           </section>
         </div>
-
-          {/* Optional: 67 FAQ JSON-LD for SEO */}
-          <Script
-            id="home-67-faq"
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                '@context': 'https://schema.org',
-                '@type': 'FAQPage',
-                mainEntity: [
-                  { '@type': 'Question', name: 'How to get 67?', acceptedAnswer: { '@type': 'Answer', text: 'Reach mid-game, farm during Admin Abuse/Taco Tuesday, then buy Admin Lucky Blocks and roll for 67 (~0.25%).' } },
-                  { '@type': 'Question', name: 'What is the 67 drop rate?', acceptedAnswer: { '@type': 'Answer', text: 'Community reports ~0.25% from Admin Lucky Blocks; subject to change.' } },
-                  { '@type': 'Question', name: 'What is the fastest way to get 67?', acceptedAnswer: { '@type': 'Answer', text: 'Play during Admin Abuse and Taco Tuesday, use a private server, pre-farm budget, then roll blocks efficiently.' } }
-                ]
-              })
-            }}
-          />
+      
 
           <section className="mb-10">
             <div className="text-center">
