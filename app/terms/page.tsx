@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   description: 'Terms of Service for Steal Brainrot 67. Learn your rights and responsibilities, account rules, and limitations when accessing and playing our online game.',
   keywords: 'Steal Brainrot 67 terms, terms of service, rules, account policy, legal',
   robots: { index: true, follow: true }
+  alternates: { canonical: 'https://stealbrainrot67.com/terms' }
 };
 
 export default function Terms() {

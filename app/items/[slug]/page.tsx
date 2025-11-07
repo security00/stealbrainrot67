@@ -6,12 +6,6 @@ import BackgroundAnimation from '../../components/BackgroundAnimation';
 import { notFound } from 'next/navigation';
 import { findBySlug, items, roiSeconds, roiHuman, slugify } from '../../../data/items';
 
-export const metadata: Metadata = {
-  title: 'Item Details',
-  description: 'Item details: cost, income per second, drop rate and ROI.'
-};
-
-
 // Pre-generate all item detail pages (SSG)
 export function generateStaticParams() {
   // Emit unique slugs for id, name and aliases to be robust across links
@@ -22,6 +16,11 @@ export function generateStaticParams() {
     (it.aliases || []).forEach(a => set.add(slugify(a)));
   });
   return Array.from(set).map(slug => ({ slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<import('next').Metadata> {
+  const { slug } = await params;
+  return { alternates: { canonical: "https://stealbrainrot67.com/items/" + slug } };
 }
 
 export default async function ItemDetail({ params }: { params: Promise<{ slug: string }> }) {

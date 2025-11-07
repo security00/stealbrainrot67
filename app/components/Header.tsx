@@ -23,6 +23,8 @@ export default function Header() {
           <Link href="/guides" className="text-white hover:text-cyan-400 transition-colors font-semibold">Guides</Link>
           <Link href="/items" className="text-white hover:text-cyan-400 transition-colors font-semibold">Items</Link>
           <Link href="/guides/how-to-get-67" className="text-white hover:text-cyan-400 transition-colors font-semibold">How to Get 67</Link>
+          <Link href="/about" className="text-white hover:text-cyan-400 transition-colors font-semibold">About</Link>
+        
         </div>
 
         {/* Mobile Menu Button */}
@@ -40,6 +42,8 @@ export default function Header() {
           <Link href="/guides" className="block px-4 py-2 text-white hover:text-cyan-400 transition-colors" onClick={() => setMobileMenuOpen(false)}>Guides</Link>
           <Link href="/items" className="block px-4 py-2 text-white hover:text-cyan-400 transition-colors" onClick={() => setMobileMenuOpen(false)}>Items</Link>
           <Link href="/guides/how-to-get-67" className="block px-4 py-2 text-white hover:text-cyan-400 transition-colors" onClick={() => setMobileMenuOpen(false)}>How to Get 67</Link>
+          <Link href="/about" className="block px-4 py-2 text-white hover:text-cyan-400 transition-colors" onClick={() => setMobileMenuOpen(false)}>About</Link>
+        
         </div>
       )}
     </header>
