@@ -71,6 +71,8 @@ export default function AboutPage() {
 
           <div className="mt-12">
             <Link href="/items" className="text-cyan-400 hover:underline">Browse Items -&gt;</Link>
+            <span className="mx-2 text-gray-500">|</span>
+            <Link href="/items/67" className="text-cyan-400 hover:underline">See 67 Details -&gt;</Link>
           </div>
         </div>
       </main>

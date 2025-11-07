@@ -206,7 +206,14 @@ export default function Home() {
             </div>
           </section>
         </div>
-      </main>
+      
+
+          <section className="mb-10">
+            <div className="text-center">
+              <Link href="/items/67" className="text-cyan-400 hover:underline font-semibold">Featured: See 67 item details -&gt;</Link>
+            </div>
+          </section>
+</main>
 
       <Footer />
     </>
