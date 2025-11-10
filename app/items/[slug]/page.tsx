@@ -3,6 +3,9 @@ import Link from 'next/link';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import BackgroundAnimation from '../../components/BackgroundAnimation';
+import YouTubeLite from '../../components/YouTubeLite';
+import { getVideos } from '../../../data/videos';
+import Script from 'next/script';
 import { notFound } from 'next/navigation';
 import { findBySlug, items, roiSeconds, roiHuman, slugify } from '../../../data/items';
 
@@ -49,6 +52,9 @@ export default async function ItemDetail({ params }: { params: Promise<{ slug: s
           </nav>
 
           <h1 className="text-3xl md:text-5xl font-black neon-text mb-4">{it.name}</h1>
+          {it.id === '67' && (
+            <p className="text-gray-300 mb-4 text-sm md:text-base">Complete <strong>steal brainrot 67</strong> item details, stats and fastest strategies.</p>
+          )}
           <p className="text-gray-500 text-xs mb-4">Last verified: {it.lastVerified || '-'}</p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
@@ -105,6 +111,40 @@ export default async function ItemDetail({ params }: { params: Promise<{ slug: s
             <h2 className="text-2xl font-bold text-cyan-400 mb-3">Sources</h2>
             <p className="text-gray-500 text-xs">Community data; subject to change with updates.</p>
           </section>
+
+          {it.id === '67' && (() => {
+            const vids = getVideos('67');
+            if (!vids.length) return null;
+            return (
+              <section className="mb-8">
+                <h2 className="text-2xl font-bold text-cyan-400 mb-3">Related Videos</h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {vids.map((v, i) => (
+                    <YouTubeLite key={v.id + i} id={v.id} title={v.title} start={v.start} analyticsId="video_item67" />
+                  ))}
+                </div>
+                <Script
+                  id="video-item67-jsonld"
+                  type="application/ld+json"
+                  dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                      '@context': 'https://schema.org',
+                      '@type': 'ItemList',
+                      itemListElement: vids.map((v, idx) => ({
+                        '@type': 'VideoObject',
+                        position: idx + 1,
+                        name: v.title,
+                        description: v.title,
+                        thumbnailUrl: `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`,
+                        uploadDate: v.published || undefined,
+                        embedUrl: `https://www.youtube-nocookie.com/embed/${v.id}`,
+                      })),
+                    }),
+                  }}
+                />
+              </section>
+            );
+          })()}
         </div>
       </main>
       <Footer />

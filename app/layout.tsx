@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Steal Brainrot 67 - Rare Meme Collection Game",
   description: "Play Steal Brainrot 67 online - Collect rare Roblox memes and unlock the legendary 67 item. Free unblocked game with guides and tips.",
-  keywords: "steal brainrot, steal brainrot 67, brainrot 67, roblox brainrot, meme game, free online game",
+  keywords: "steal brainrot 67, steal brainrot, brainrot 67, roblox brainrot",
   authors: [{ name: "Steal Brainrot 67" }],
   metadataBase: new URL("https://stealbrainrot67.com"),
   openGraph: {
@@ -63,6 +63,11 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+        {/* Preconnect for YouTube embed and thumbnails */}
+        <link rel="preconnect" href="https://www.youtube-nocookie.com" />
+        <link rel="dns-prefetch" href="https://www.youtube-nocookie.com" />
+        <link rel="preconnect" href="https://i.ytimg.com" />
+        <link rel="dns-prefetch" href="https://i.ytimg.com" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx"></script>
         <StructuredData />
 

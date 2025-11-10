@@ -3,21 +3,20 @@ import Link from 'next/link';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import BackgroundAnimation from '../../components/BackgroundAnimation';
+import YouTubeLite from '../../components/YouTubeLite';
+import { getVideos } from '../../../data/videos';
+import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'How to Get 67 in Steal a Brainrot (Roblox) - Step-by-Step',
   description: 'Exact steps to unlock item 67 in Steal a Brainrot (Roblox): requirements, route, tips, common mistakes, and FAQs.',
   keywords: [
+    'steal brainrot 67',
     'how to get 67',
-    'how to get 67 in steal a brainrot',
-    'steal a brainrot 67',
-    'unlock item 67',
     'roblox brainrot 67',
-    'fastest way to get 67',
     '67 drop rate',
-    '67 spawn chance',
-    'taco tuesday event'
-  ] .join(', '),
+    'taco tuesday'
+  ].join(', '),
   openGraph: {
     title: 'How to Get 67 in Steal a Brainrot (Roblox) - Step-by-Step',
     description: 'Exact steps to unlock item 67 in Steal a Brainrot (Roblox): requirements, route, tips, common mistakes, and FAQs.',
@@ -28,6 +27,7 @@ export const metadata: Metadata = {
 };
 
 export default function HowToGet67() {
+  const relatedVideos = getVideos('67');
   const howToJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'HowTo',
@@ -129,7 +129,7 @@ export default function HowToGet67() {
             How to Get 67 in Steal a Brainrot (Roblox)
           </h1>
           <p className="text-gray-400 mb-8">
-            Follow this step-by-step route to unlock <strong>item 67</strong>. This guide covers requirements,
+            Follow this step-by-step route to unlock <strong>item 67</strong> fast in <strong>steal brainrot 67</strong>. This guide covers requirements,
             recommended prep, the shortest route, common mistakes, and FAQs. If you are looking for the story behind 67,
             read the <Link href="/lore/67" className="text-cyan-400 hover:underline">67 lore</Link>.
           </p>
@@ -144,6 +144,38 @@ export default function HowToGet67() {
               <li><a href="https://beebom.com/roblox-steal-a-brainrot-all-secret-brainrots/" target="_blank" rel="noopener nofollow">Beebom: All secret brainrots</a></li>
             </ul>
           </section>
+
+          {relatedVideos.length > 0 && (
+            <section id="videos" className="mb-10">
+              <h2 className="text-2xl font-bold text-cyan-400 mb-3">Related Videos</h2>
+              <p className="text-gray-400 mb-3 text-sm">Community tutorials about item 67 (not affiliated). Videos open inline without cookies.</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {relatedVideos.map((v, i) => (
+                  <YouTubeLite key={v.id + i} id={v.id} title={v.title} start={v.start} analyticsId="video_howto67" />
+                ))}
+              </div>
+              {/* Structured data for videos */}
+              <Script
+                id="video-howto67-jsonld"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify({
+                    '@context': 'https://schema.org',
+                    '@type': 'ItemList',
+                    itemListElement: relatedVideos.map((v, idx) => ({
+                      '@type': 'VideoObject',
+                      position: idx + 1,
+                      name: v.title,
+                      description: v.title,
+                      thumbnailUrl: `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`,
+                      uploadDate: v.published || undefined,
+                      embedUrl: `https://www.youtube-nocookie.com/embed/${v.id}`,
+                    })),
+                  }),
+                }}
+              />
+            </section>
+          )}
 
           
           <section id="fastest-route" className="mb-10">

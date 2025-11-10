@@ -5,11 +5,13 @@ import Footer from './components/Footer';
 import GameFrame from './components/GameFrame';
 import BackgroundAnimation from './components/BackgroundAnimation';
 import Script from 'next/script';
+import YouTubeLite from './components/YouTubeLite';
+import { getVideos } from '../data/videos';
 
 export const metadata: Metadata = {
   title: 'Steal Brainrot 67 - Play Free Meme Game Online',
   description: 'Play Steal Brainrot 67 online for free. Collect rare Roblox memes and unlock the legendary item 67. No download required, play instantly in your browser.',
-  keywords: 'steal brainrot, steal brainrot 67, brainrot 67, roblox brainrot, free online game, meme game, how to get 67, unlock 67, item 67 guide',
+  keywords: 'steal brainrot 67, steal brainrot, brainrot 67, roblox brainrot, how to get 67',
   openGraph: {
     title: 'Steal Brainrot 67 - Play Free Meme Game Online',
     description: 'Play Steal Brainrot 67 online for free. Collect rare Roblox memes and unlock the legendary item 67.',
@@ -22,6 +24,7 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const homeVideos = getVideos('67').slice(0, 4);
   return (
     <>
       <BackgroundAnimation />
@@ -38,10 +41,10 @@ export default function Home() {
           <section className="mb-12 md:mb-14" aria-labelledby="home-67-quick">
             <div className="bg-black/50 border border-cyan-500/40 rounded-lg p-6 md:p-8">
               <h2 id="home-67-quick" className="text-2xl md:text-3xl font-black text-cyan-400 mb-4">
-                How To Get 67 (Quick Guide)
+                How To Get 67 in Steal Brainrot 67 (Quick Guide)
               </h2>
               <p className="text-gray-300 mb-4">
-                Landing here from searching <strong>“STEAL BRAINROT 67”</strong>? Here’s the short version:
+                Landing here from searching <strong>“steal brainrot 67”</strong>? Here’s the short version with the best tips for <strong>steal brainrot 67</strong> players:
               </p>
               <ol className="list-decimal pl-5 space-y-2 text-gray-300">
                 <li>Reach mid-game (around level 20) and unlock late-game areas.</li>
@@ -77,6 +80,40 @@ export default function Home() {
               </div>
             </div>
           </section>
+
+          {/* 67 Related Videos - Increase Exposure */}
+          {homeVideos.length > 0 && (
+            <section className="mb-12 md:mb-16" aria-labelledby="home-videos">
+              <div className="mb-4 flex items-end justify-between">
+                <h2 id="home-videos" className="text-2xl md:text-3xl font-black text-cyan-400">Watch Steal Brainrot 67 Guides & Videos</h2>
+                <Link href="/videos/67" className="text-cyan-400 hover:underline text-sm md:text-base">See all related videos -&gt;</Link>
+              </div>
+              <p className="text-gray-400 text-sm md:text-base mb-4">Popular community videos about getting 67 in <strong>steal brainrot 67</strong> and understanding events. Click to play inline without cookies.</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {homeVideos.map((v, i) => (
+                  <YouTubeLite key={v.id + i} id={v.id} title={v.title} analyticsId="video_home" />
+                ))}
+              </div>
+              <Script
+                id="home-videos-jsonld"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                  __html: JSON.stringify({
+                    '@context': 'https://schema.org',
+                    '@type': 'ItemList',
+                    itemListElement: homeVideos.map((v, idx) => ({
+                      '@type': 'VideoObject',
+                      position: idx + 1,
+                      name: v.title,
+                      description: v.title,
+                      thumbnailUrl: `https://i.ytimg.com/vi/${v.id}/hqdefault.jpg`,
+                      embedUrl: `https://www.youtube-nocookie.com/embed/${v.id}`,
+                    })),
+                  }),
+                }}
+              />
+            </section>
+          )}
 
           {/* Hero Section - Below Game */}
           <section className="text-center mb-16 md:mb-20 mt-8 md:mt-12">
@@ -271,9 +308,9 @@ export default function Home() {
 
           <section className="mb-10">
             <div className="text-center">
-              <Link href="/items/67" className="text-cyan-400 hover:underline font-semibold">Featured: See 67 item details -&gt;</Link>
-            </div>
-          </section>
+              <Link href="/items/67" className="text-cyan-400 hover:underline font-semibold">Featured: See Steal Brainrot 67 item details -&gt;</Link>
+              </div>
+            </section>
 </main>
 
       <Footer />
