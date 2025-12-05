@@ -7,6 +7,13 @@ export type Video = {
 };
 
 export const videosBySlug: Record<string, Video[]> = {
+  // Festive Lucky Block (Christmas leak/event)
+  'festive-lucky-block': [
+    { id: 'wYq5BgizkN0', title: 'Opening 100 Festive Lucky Blocks For The New 0.1% Secret...', author: 'Dash Roblox' },
+    { id: '-my0GYOAecg', title: 'Roblox New Christmas fuse machine with 15 Brainrots! + New Festive Lucky Block - Steal a Brainrot', author: 'EoOnG Gaming' },
+    { id: '_cMJqScLrwM', title: 'I Opened 60 FESTIVE Lucky Blocks and Got This...', author: 'Johnny and Marty' },
+    { id: 'EuB4zQP-1mg', title: 'Opening 100 FESTIVE LUCKY BLOCKS in Steal a Brainrot!', author: 'manofTaj' },
+  ],
   // Curated videos for item 67 (YouTube IDs must be 11 chars)
   '67': [
     { id: 'VVpARgKYr2Q', title: 'Unlocking 1 in a Million 67 BRAINROT In Steal a Brainrot' },

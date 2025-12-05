@@ -1,4 +1,4 @@
-﻿import { Metadata } from 'next';
+import { Metadata } from 'next';
 import Link from 'next/link';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -44,7 +44,7 @@ export default function Home() {
                 How To Get 67 in Steal Brainrot 67 (Quick Guide)
               </h2>
               <p className="text-gray-300 mb-4">
-                Landing here from searching <strong>“steal brainrot 67”</strong>? Here’s the short version with the best tips for <strong>steal brainrot 67</strong> players:
+                Landing here from searching <strong>"steal brainrot 67"</strong>? Here's the short version with the best tips for <strong>steal brainrot 67</strong> players:
               </p>
               <ol className="list-decimal pl-5 space-y-2 text-gray-300">
                 <li>Reach mid-game (around level 20) and unlock late-game areas.</li>
@@ -76,6 +76,28 @@ export default function Home() {
                   className="bg-purple-600 hover:bg-purple-700 text-white font-bold px-6 py-3 rounded-lg text-center"
                 >
                   Step-by-Step Guide
+                </Link>
+              </div>
+            </div>
+          </section>
+
+          {/* Festive Lucky Block Entry Point */}
+          <section className="mb-12 md:mb-14" aria-labelledby="home-festive">
+            <div className="bg-purple-900/20 border border-cyan-500/50 rounded-lg p-6 md:p-8">
+              <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                <div>
+                  <h2 id="home-festive" className="text-2xl md:text-3xl font-black text-cyan-400 mb-2">
+                    Festive Lucky Block (Christmas Event)
+                  </h2>
+                  <p className="text-gray-300 text-sm md:text-base">
+                    $500M cost, festive rarity, leaked drops and how to prep for Christmas/Admin Abuse/7-day login.
+                  </p>
+                </div>
+                <Link
+                  href="/lucky-blocks/festive-lucky-block"
+                  className="inline-block bg-cyan-500 hover:bg-cyan-600 text-black font-bold px-5 py-3 rounded-lg text-center"
+                >
+                  View Festive Lucky Block Guide
                 </Link>
               </div>
             </div>
@@ -126,9 +148,17 @@ export default function Home() {
               </p>
               <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg mb-8 md:mb-10 leading-relaxed">
                 Embark on an epic adventure to collect rare Roblox memes and unlock the legendary item 67.
-                Play free online, no download needed. Join thousands of meme collectors worldwide and play
-                <span className="mx-1 font-semibold text-cyan-300">steal brainrot 67</span> right in your browser.
+                Play the <strong>steal a brainrot 67 game</strong> online for free, no download needed. Join thousands of meme
+                collectors worldwide and play <span className="mx-1 font-semibold text-cyan-300">steal brainrot 67</span> right in your browser.
               </p>
+              <div className="max-w-3xl mx-auto">
+                <img
+                  src="/hero-67.svg"
+                  alt="Steal a Brainrot 67 game preview with item 67 highlight"
+                  loading="lazy"
+                  className="w-full rounded-lg border border-cyan-500/40 shadow-lg bg-black/40"
+                />
+              </div>
             </div>
 
             {/* Stats */}
@@ -148,65 +178,55 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Features Section */}
+          {/* Hot Events / Search Intent Section */}
           <section className="mb-20 md:mb-24 py-12 md:py-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black neon-text text-center mb-12 md:mb-16">
-              Why Players Love Steal Brainrot 67
+              Hot Right Now: 67 Routes & Event Blocks
             </h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-              {/* Feature 1 */}
-              <div className="bg-purple-900/20 border border-cyan-500/50 rounded-lg p-6 md:p-8 hover:border-cyan-400 transition-colors">
-                <div className="text-4xl md:text-5xl mb-4">*</div>
-                <h3 className="text-lg md:text-xl font-bold text-cyan-400 mb-3">Instant Play</h3>
-                <p className="text-gray-400 text-sm md:text-base leading-relaxed">
-                  Play directly in your browser. No downloads, no installations. Start playing in seconds and collect memes immediately.
-                </p>
+              {/* 67 Quick Route */}
+              <div className="bg-purple-900/20 border border-cyan-500/50 rounded-lg p-6 md:p-8 hover:border-cyan-400 transition-colors flex flex-col justify-between">
+                <div>
+                  <h3 className="text-lg md:text-xl font-bold text-cyan-400 mb-3">How to get 67 (Roblox)</h3>
+                  <p className="text-gray-400 text-sm md:text-base leading-relaxed">
+                    Step-by-step route to unlock item 67 for free. Covers Admin Abuse, Taco Tuesday boosts, and drop math.
+                  </p>
+                </div>
+                <Link href="/guides/how-to-get-67" className="mt-4 inline-block text-cyan-400 hover:underline font-semibold">
+                  Open the 67 guide -&gt;
+                </Link>
               </div>
 
-              {/* Feature 2 */}
-              <div className="bg-purple-900/20 border border-cyan-500/50 rounded-lg p-6 md:p-8 hover:border-cyan-400 transition-colors">
-                <div className="text-4xl md:text-5xl mb-4">*</div>
-                <h3 className="text-lg md:text-xl font-bold text-purple-400 mb-3">Rare Items</h3>
-                <p className="text-gray-400 text-sm md:text-base leading-relaxed">
-                  Discover 50+ collectible meme items including the legendary item 67. Each item has unique properties and hidden bonuses.
-                </p>
+              {/* Festive Lucky Block */}
+              <div className="bg-purple-900/20 border border-cyan-500/50 rounded-lg p-6 md:p-8 hover:border-cyan-400 transition-colors flex flex-col justify-between">
+                <div>
+                  <h3 className="text-lg md:text-xl font-bold text-purple-400 mb-3">Festive Lucky Block (Christmas)</h3>
+                  <p className="text-gray-400 text-sm md:text-base leading-relaxed">
+                    $500M cost, festive rarity, leaked drops, and how to prep during Christmas/Admin Abuse/7-day login.
+                  </p>
+                </div>
+                <Link href="/lucky-blocks/festive-lucky-block" className="mt-4 inline-block text-cyan-400 hover:underline font-semibold">
+                  View Festive Lucky Block -&gt;
+                </Link>
               </div>
 
-              {/* Feature 3 */}
-              <div className="bg-purple-900/20 border border-cyan-500/50 rounded-lg p-6 md:p-8 hover:border-cyan-400 transition-colors">
-                <div className="text-4xl md:text-5xl mb-4">*</div>
-                <h3 className="text-lg md:text-xl font-bold text-magenta-400 mb-3">Daily Challenges</h3>
-                <p className="text-gray-400 text-sm md:text-base leading-relaxed">
-                  Complete daily quests and challenges to earn bonus points, unlock achievements, and climb the global leaderboard.
-                </p>
-              </div>
-
-              {/* Feature 4 */}
-              <div className="bg-purple-900/20 border border-cyan-500/50 rounded-lg p-6 md:p-8 hover:border-cyan-400 transition-colors">
-                <div className="text-4xl md:text-5xl mb-4">*</div>
-                <h3 className="text-lg md:text-xl font-bold text-cyan-400 mb-3">Cross-Platform</h3>
-                <p className="text-gray-400 text-sm md:text-base leading-relaxed">
-                  Play on desktop, tablet, or mobile. Responsive design ensures smooth gameplay on any device with internet connection.
-                </p>
-              </div>
-
-              {/* Feature 5 */}
-              <div className="bg-purple-900/20 border border-cyan-500/50 rounded-lg p-6 md:p-8 hover:border-cyan-400 transition-colors">
-                <div className="text-4xl md:text-5xl mb-4">*</div>
-                <h3 className="text-lg md:text-xl font-bold text-purple-400 mb-3">Multiplayer</h3>
-                <p className="text-gray-400 text-sm md:text-base leading-relaxed">
-                  Connect with players worldwide. Trade items, join factions, and compete in real-time multiplayer battles for glory.
-                </p>
-              </div>
-
-              {/* Feature 6 */}
-              <div className="bg-purple-900/20 border border-cyan-500/50 rounded-lg p-6 md:p-8 hover:border-cyan-400 transition-colors">
-                <div className="text-4xl md:text-5xl mb-4">*</div>
-                <h3 className="text-lg md:text-xl font-bold text-magenta-400 mb-3">Secure & Safe</h3>
-                <p className="text-gray-400 text-sm md:text-base leading-relaxed">
-                  Your account and progress are protected. No viruses, no malware. Play worry-free with our advanced security systems.
-                </p>
+              {/* Codes & Myths */}
+              <div className="bg-purple-900/20 border border-cyan-500/50 rounded-lg p-6 md:p-8 hover:border-cyan-400 transition-colors flex flex-col justify-between">
+                <div>
+                  <h3 className="text-lg md:text-xl font-bold text-magenta-400 mb-3">Codes, Myths & Safety</h3>
+                  <p className="text-gray-400 text-sm md:text-base leading-relaxed">
+                    No official "67 code" exists - avoid fakes. Use legit events to fund blocks. Read lore if you searched how to "kill/steal 67".
+                  </p>
+                </div>
+                <div className="mt-4 flex flex-col gap-2">
+                  <Link href="/guides/how-to-get-67#codes" className="text-cyan-400 hover:underline font-semibold">
+                    See codes & free routes -&gt;
+                  </Link>
+                  <Link href="/lore/67#faqs" className="text-cyan-400 hover:underline font-semibold">
+                    Read 67 lore FAQ -&gt;
+                  </Link>
+                </div>
               </div>
             </div>
           </section>

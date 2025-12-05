@@ -7,7 +7,7 @@ import { items, roiSeconds, roiHuman, slugify } from '../../data/items';
 
 export const metadata: Metadata = {
   title: 'Steal a Brainrot Items - Rarity, Source, Cost, Income & ROI',
-  description: 'Browse Steal a Brainrot items with cost, income per second, drop rate and ROI. Data-driven list updated with last verified date.',
+  description: 'Browse Steal a Brainrot items with cost, income per second, drop rate and ROI. Data-driven list with last verified date and ROI sorting for best buys.',
   openGraph: { title: 'Steal a Brainrot Items', description: 'Items with stats and ROI.', url: 'https://stealbrainrot67.com/items', type: 'website' },
   alternates: { canonical: 'https://stealbrainrot67.com/items' }
 };
@@ -25,6 +25,11 @@ export default function ItemsIndex() {
           <h1 className="text-3xl md:text-5xl font-black neon-text mb-2">Items</h1>
           <p className="text-gray-400 mb-2">Cost, income per second, drop rate (if known) and calculated ROI. Click an item for details.</p>
           <p className="text-gray-500 text-xs mb-6">Last verified: {items[0]?.lastVerified}</p>
+          <div className="bg-black/40 border border-cyan-500/40 rounded-lg p-4 mb-6">
+            <p className="text-sm text-gray-300">
+              Tracking event blocks? See the <Link href="/lucky-blocks/festive-lucky-block" className="text-cyan-400 hover:underline">Festive Lucky Block</Link> release notes and leaked drop table.
+            </p>
+          </div>
 
           <div className="overflow-x-auto">
             <table className="w-full text-left text-sm text-gray-300 border border-cyan-500/30">

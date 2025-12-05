@@ -1,4 +1,4 @@
-﻿import { Metadata } from 'next';
+import { Metadata } from 'next';
 import Link from 'next/link';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -57,6 +57,15 @@ export default function Lore67() {
           '@type': 'Answer',
           text:
             'It is a commonly cited sequence tied to a hidden entrance in fan accounts, assembled from headstone numbers and an extra clue.'
+        }
+      },
+      {
+        '@type': 'Question',
+        name: 'How do you escape or kill 67?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text:
+            '67 is portrayed as an entity to understand, not a boss to kill. Gameplay guides focus on unlocking or escaping scenes rather than defeating it.'
         }
       }
     ]
@@ -127,6 +136,7 @@ export default function Lore67() {
             <div className="text-gray-300 space-y-3">
               <p><strong>Does the lore change with updates?</strong> Specifics can shift; the themes remain consistent.</p>
               <p><strong>Is the code always the same?</strong> Treat it as a community-shared clue; verify after updates.</p>
+              <p><strong>How do you escape or kill 67?</strong> In lore, 67 is not a killable boss. Players focus on discovering, escaping scenes, or unlocking 67 rather than defeating it.</p>
             </div>
           </section>
 

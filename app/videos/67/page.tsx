@@ -38,7 +38,8 @@ export default function Videos67() {
 
           <h1 className="text-3xl md:text-5xl font-black neon-text mb-4">67 Videos</h1>
           <p className="text-gray-400 mb-6">
-            Watch community videos about <strong>how to get item 67</strong> in <strong>steal brainrot 67</strong>, event strategies and lore. Not affiliated. Videos load on click using
+            Watch community videos about <strong>how to get item 67</strong> in <strong>steal brainrot 67</strong>, event strategies and lore. If you searched
+            &quot;how to get 67 brainrot roblox&quot; or &quot;67 brainrot game&quot;, these runs show the full route. Not affiliated. Videos load on click using
             privacy-friendly embeds.
           </p>
 
