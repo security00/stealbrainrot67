@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useRef, useState } from 'react';
 
 interface GameFrameProps {
   src: string;
@@ -17,7 +17,6 @@ export default function GameFrame({ src, title = 'Steal Brainrot 67' }: GameFram
 
     if (!document.fullscreenElement) {
       iframeRef.current.requestFullscreen().catch(() => {
-        // Fallback for browsers that don't support fullscreen
         setIsFullscreen(true);
       });
     } else {
@@ -26,36 +25,15 @@ export default function GameFrame({ src, title = 'Steal Brainrot 67' }: GameFram
     }
   };
 
-  const handleLoad = () => {
-    setIsLoading(false);
-  };
-
-  const shareGame = (platform: string) => {
-    const url = 'https://stealbrainrot67.com';
-    const text = 'Check out Steal Brainrot 67 - the ultimate rare meme collection game!';
-
-    const urls: { [key: string]: string } = {
-      x: `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`,
-      tiktok: `https://www.tiktok.com/`,
-      youtube: `https://www.youtube.com/`,
-    };
-
-    if (urls[platform]) {
-      window.open(urls[platform], '_blank');
-    }
-  };
-
   return (
     <div className="w-full mt-0">
       <div className="flex flex-col gap-3">
-        {/* Loading Bar */}
         {isLoading && (
           <div className="w-full h-1 bg-gray-800 rounded-full overflow-hidden">
             <div className="loading-bar w-full"></div>
           </div>
         )}
 
-        {/* Game Container */}
         <div className={`relative w-full bg-black rounded-lg neon-border overflow-hidden ${isFullscreen ? 'fixed inset-0 z-50 rounded-none' : ''}`}>
           <div className="aspect-video w-full relative">
             <iframe
@@ -65,25 +43,23 @@ export default function GameFrame({ src, title = 'Steal Brainrot 67' }: GameFram
               width="100%"
               height="100%"
               frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen; gamepad"
               allowFullScreen
-              onLoad={handleLoad}
+              onLoad={() => setIsLoading(false)}
               className="absolute inset-0 w-full h-full"
             />
           </div>
 
-          {/* Controls */}
           <div className="absolute bottom-4 right-4 flex gap-2">
             <button
               onClick={toggleFullscreen}
               className="bg-cyan-500/20 hover:bg-cyan-500/40 text-cyan-400 px-3 py-2 rounded-lg text-sm font-semibold transition-colors border border-cyan-500/50"
             >
-              ⛶ Fullscreen
+              Fullscreen
             </button>
           </div>
         </div>
 
-        {/* Title & Description - Below Game */}
         <div className="text-center mt-2">
           <h2 className="text-2xl md:text-3xl font-black neon-text mb-1">
             {title}
@@ -91,7 +67,6 @@ export default function GameFrame({ src, title = 'Steal Brainrot 67' }: GameFram
           <p className="text-gray-400 text-xs md:text-sm">
             Collect rare Roblox memes and unlock the legendary item 67. Play now!
           </p>
-          {/* Disclaimer to align user intent: this is a browser demo, official game lives on Roblox */}
           <p className="text-gray-500 text-[11px] md:text-xs mt-2">
             This embedded player is a browser practice demo. For the official experience, play Steal a Brainrot on Roblox via the button below.
           </p>

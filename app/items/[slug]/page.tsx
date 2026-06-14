@@ -1,4 +1,3 @@
-import { Metadata } from 'next';
 import Link from 'next/link';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
@@ -70,7 +69,7 @@ export default async function ItemDetail({ params }: { params: Promise<{ slug: s
             <h2 className="text-2xl font-bold text-cyan-400 mb-3">How to Get</h2>
             <ul className="list-disc pl-6 text-gray-300 space-y-1">
               <li>Source: {it.source || 'Check events and announcements in-game.'}</li>
-              {it.source && it.source.includes('Admin Lucky Blocks') && (
+              {it.source && it.source.toLowerCase().includes('admin lucky block') && (
                 <>
                   <li>Admin Lucky Blocks often appear during Admin Abuse events.</li>
                   <li>Buy blocks when available (around $100m each) and roll for this item.</li>

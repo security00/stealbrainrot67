@@ -18,8 +18,10 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6">
           <Link href="/" className="text-white hover:text-cyan-400 transition-colors font-semibold">Play</Link>
+          <Link href="/steal-brainrot" className="text-white hover:text-cyan-400 transition-colors font-semibold">Steal Brainrot</Link>
+          <Link href="/lucky-blocks" className="text-white hover:text-cyan-400 transition-colors font-semibold">Blocks</Link>
           <Link href="/guides" className="text-white hover:text-cyan-400 transition-colors font-semibold">Guides</Link>
           <Link href="/items" className="text-white hover:text-cyan-400 transition-colors font-semibold">Items</Link>
           <Link href="/guides/how-to-get-67" className="text-white hover:text-cyan-400 transition-colors font-semibold">How to Get 67</Link>
@@ -39,6 +41,8 @@ export default function Header() {
       {mobileMenuOpen && (
         <div className="md:hidden bg-black/95 border-t border-cyan-500/30 py-4">
           <Link href="/" className="block px-4 py-2 text-white hover:text-cyan-400 transition-colors" onClick={() => setMobileMenuOpen(false)}>Play</Link>
+          <Link href="/steal-brainrot" className="block px-4 py-2 text-white hover:text-cyan-400 transition-colors" onClick={() => setMobileMenuOpen(false)}>Steal Brainrot</Link>
+          <Link href="/lucky-blocks" className="block px-4 py-2 text-white hover:text-cyan-400 transition-colors" onClick={() => setMobileMenuOpen(false)}>Lucky Blocks</Link>
           <Link href="/guides" className="block px-4 py-2 text-white hover:text-cyan-400 transition-colors" onClick={() => setMobileMenuOpen(false)}>Guides</Link>
           <Link href="/items" className="block px-4 py-2 text-white hover:text-cyan-400 transition-colors" onClick={() => setMobileMenuOpen(false)}>Items</Link>
           <Link href="/guides/how-to-get-67" className="block px-4 py-2 text-white hover:text-cyan-400 transition-colors" onClick={() => setMobileMenuOpen(false)}>How to Get 67</Link>

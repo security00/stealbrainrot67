@@ -9,12 +9,12 @@ import YouTubeLite from './components/YouTubeLite';
 import { getVideos } from '../data/videos';
 
 export const metadata: Metadata = {
-  title: 'Steal Brainrot 67 - Play Free Meme Game Online',
-  description: 'Play Steal Brainrot 67 online for free. Collect rare Roblox memes and unlock the legendary item 67. No download required, play instantly in your browser.',
-  keywords: 'steal brainrot 67, steal brainrot, brainrot 67, roblox brainrot, how to get 67',
+  title: '67 Steal a Brainrot Game - Play Free Online',
+  description: 'Play 67 Steal a Brainrot Game online for free. Launch the browser game instantly, learn about item 67, and follow quick Roblox 67 tips.',
+  keywords: '67 steal a brainrot game, steal a brainrot 67, steal a brainrot 67 free, steal a brainrot roblox 67, steal brainrot 67, how to get 67',
   openGraph: {
-    title: 'Steal Brainrot 67 - Play Free Meme Game Online',
-    description: 'Play Steal Brainrot 67 online for free. Collect rare Roblox memes and unlock the legendary item 67.',
+    title: '67 Steal a Brainrot Game - Play Free Online',
+    description: 'Play 67 Steal a Brainrot Game online for free. Launch instantly in your browser and follow quick item 67 tips.',
     url: 'https://stealbrainrot67.com/',
     type: 'website',
   },
@@ -34,23 +34,23 @@ export default function Home() {
         <div className="w-full max-w-6xl mx-auto">
           {/* Game Section - Top Priority */}
           <section className="mb-12 md:mb-16">
-            <GameFrame src="https://steal-brainrot.io/steal-brainrot.embed" title="Steal Brainrot 67 - Play Now" />
+            <GameFrame src="https://yoplay.io/steal-a-brainrot.embed" title="67 Steal a Brainrot Game - Play Now" />
           </section>
 
           {/* 67 Quick Guide - Directly Under Game Embed */}
           <section className="mb-12 md:mb-14" aria-labelledby="home-67-quick">
             <div className="bg-black/50 border border-cyan-500/40 rounded-lg p-6 md:p-8">
               <h2 id="home-67-quick" className="text-2xl md:text-3xl font-black text-cyan-400 mb-4">
-                How To Get 67 in Steal Brainrot 67 (Quick Guide)
+                How To Get 67 in Steal a Brainrot (Quick Guide)
               </h2>
               <p className="text-gray-300 mb-4">
-                Landing here from searching <strong>"steal brainrot 67"</strong>? Here's the short version with the best tips for <strong>steal brainrot 67</strong> players:
+                Landing here from searching <strong>&quot;67 steal a brainrot game&quot;</strong> or <strong>&quot;steal a brainrot 67&quot;</strong>? Here&apos;s the short version for players chasing item 67:
               </p>
               <ol className="list-decimal pl-5 space-y-2 text-gray-300">
-                <li>Reach mid-game (around level 20) and unlock late-game areas.</li>
-                <li>Farm budget during events (Admin Abuse, Taco Tuesday) to boost income fast.</li>
-                <li>Buy Admin Lucky Blocks when available and roll for 67 (~0.25% drop).</li>
-                <li>Alternatively, trade with players or finish the final boss route.</li>
+                <li>Build a cash-producing base by buying Brainrots and protecting them from raids.</li>
+                <li>Use Rebirth and event windows to increase income, slots, and gear options.</li>
+                <li>Buy Admin Lucky Blocks when available and roll for 67. Community tables list about a 1.5% Admin Lucky Block chance, but this can change.</li>
+                <li>Alternatively, watch for Sammy&apos;s Base Event routes or steal/trade with players when the game allows it.</li>
               </ol>
               <div className="mt-6 flex flex-col sm:flex-row gap-3">
                 {/* Primary: Official Roblox CTA */}
@@ -90,14 +90,14 @@ export default function Home() {
                     Festive Lucky Block (Christmas Event)
                   </h2>
                   <p className="text-gray-300 text-sm md:text-base">
-                    $500M cost, festive rarity, leaked drops and how to prep for Christmas/Admin Abuse/7-day login.
+                    Community-reported Lucky Block costs, event-only blocks, and how 67 fits into the Admin Lucky Block pool.
                   </p>
                 </div>
                 <Link
-                  href="/lucky-blocks/festive-lucky-block"
+                  href="/lucky-blocks"
                   className="inline-block bg-cyan-500 hover:bg-cyan-600 text-black font-bold px-5 py-3 rounded-lg text-center"
                 >
-                  View Festive Lucky Block Guide
+                  View Lucky Blocks Guide
                 </Link>
               </div>
             </div>
@@ -141,15 +141,15 @@ export default function Home() {
           <section className="text-center mb-16 md:mb-20 mt-8 md:mt-12">
             <div className="mb-8 md:mb-12">
               <h1 className="text-5xl md:text-7xl font-black neon-text mb-6 md:mb-8">
-                STEAL BRAINROT 67
+                67 STEAL A BRAINROT GAME
               </h1>
               <p className="text-lg md:text-2xl text-cyan-300 mb-4 md:mb-6 font-bold">
-                The Rarest Meme Collection Game
+                Play Free Online
               </p>
               <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg mb-8 md:mb-10 leading-relaxed">
                 Embark on an epic adventure to collect rare Roblox memes and unlock the legendary item 67.
-                Play the <strong>steal a brainrot 67 game</strong> online for free, no download needed. Join thousands of meme
-                collectors worldwide and play <span className="mx-1 font-semibold text-cyan-300">steal brainrot 67</span> right in your browser.
+                Play the <strong>67 steal a brainrot game</strong> online for free, no download needed. Join thousands of meme
+                collectors worldwide and play <span className="mx-1 font-semibold text-cyan-300">steal a brainrot 67</span> right in your browser.
               </p>
               <div className="max-w-3xl mx-auto">
                 <img
@@ -203,11 +203,11 @@ export default function Home() {
                 <div>
                   <h3 className="text-lg md:text-xl font-bold text-purple-400 mb-3">Festive Lucky Block (Christmas)</h3>
                   <p className="text-gray-400 text-sm md:text-base leading-relaxed">
-                    $500M cost, festive rarity, leaked drops, and how to prep during Christmas/Admin Abuse/7-day login.
+                    $400M / 799 Robux in recent community tables, with event-only availability and rotating drop pools.
                   </p>
                 </div>
                 <Link href="/lucky-blocks/festive-lucky-block" className="mt-4 inline-block text-cyan-400 hover:underline font-semibold">
-                  View Festive Lucky Block -&gt;
+                  View Lucky Blocks -&gt;
                 </Link>
               </div>
 
@@ -216,7 +216,7 @@ export default function Home() {
                 <div>
                   <h3 className="text-lg md:text-xl font-bold text-magenta-400 mb-3">Codes, Myths & Safety</h3>
                   <p className="text-gray-400 text-sm md:text-base leading-relaxed">
-                    No official "67 code" exists - avoid fakes. Use legit events to fund blocks. Read lore if you searched how to "kill/steal 67".
+                    No official &quot;67 code&quot; exists - avoid fakes. Use legit events to fund blocks. Read lore if you searched how to &quot;kill/steal 67&quot;.
                   </p>
                 </div>
                 <div className="mt-4 flex flex-col gap-2">
@@ -233,34 +233,34 @@ export default function Home() {
 
           {/* How to Get Item 67 */}
           <section className="bg-purple-900/20 border border-purple-500/50 rounded-lg p-8 md:p-12 mb-20 md:mb-24">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-purple-400 mb-8 md:mb-10">How to Unlock Item 67</h2>
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-black text-purple-400 mb-8 md:mb-10">How to Chase Item 67</h2>
             <div className="space-y-6 md:space-y-8">
               <div className="flex gap-4 md:gap-6">
                 <div className="flex-shrink-0 w-8 h-8 md:w-10 md:h-10 rounded-full bg-cyan-500 flex items-center justify-center font-bold text-black text-sm md:text-base">1</div>
                 <div>
-                  <h3 className="font-bold text-cyan-400 mb-2">Reach Level 20</h3>
-                  <p className="text-gray-400 text-sm md:text-base leading-relaxed">Complete the main story mode and reach at least level 20 to unlock advanced locations.</p>
+                  <h3 className="font-bold text-cyan-400 mb-2">Build Cash Flow</h3>
+                  <p className="text-gray-400 text-sm md:text-base leading-relaxed">Buy Brainrots, defend your base, and steal from weaker targets so your income can fund event blocks.</p>
                 </div>
               </div>
               <div className="flex gap-4 md:gap-6">
                 <div className="flex-shrink-0 w-8 h-8 md:w-10 md:h-10 rounded-full bg-cyan-500 flex items-center justify-center font-bold text-black text-sm md:text-base">2</div>
                 <div>
-                  <h3 className="font-bold text-cyan-400 mb-2">Collect 30 Rare Items</h3>
-                  <p className="text-gray-400 text-sm md:text-base leading-relaxed">Gather 30 different rare meme items by exploring hidden locations and completing side quests.</p>
+                  <h3 className="font-bold text-cyan-400 mb-2">Use Rebirth Wisely</h3>
+                  <p className="text-gray-400 text-sm md:text-base leading-relaxed">Rebirth resets most progress but unlocks stronger multipliers, more slots, and better gear routes.</p>
                 </div>
               </div>
               <div className="flex gap-4 md:gap-6">
                 <div className="flex-shrink-0 w-8 h-8 md:w-10 md:h-10 rounded-full bg-cyan-500 flex items-center justify-center font-bold text-black text-sm md:text-base">3</div>
                 <div>
-                  <h3 className="font-bold text-cyan-400 mb-2">Solve the Puzzle</h3>
-                  <p className="text-gray-400 text-sm md:text-base leading-relaxed">Find and solve the ancient puzzle hidden in the deepest dungeon of the meme realm.</p>
+                  <h3 className="font-bold text-cyan-400 mb-2">Target Admin Lucky Blocks</h3>
+                  <p className="text-gray-400 text-sm md:text-base leading-relaxed">Admin Lucky Blocks are the clearest community-reported source for 67, with each block costing around $100M when available.</p>
                 </div>
               </div>
               <div className="flex gap-4 md:gap-6">
                 <div className="flex-shrink-0 w-8 h-8 md:w-10 md:h-10 rounded-full bg-cyan-500 flex items-center justify-center font-bold text-black text-sm md:text-base">4</div>
                 <div>
-                  <h3 className="font-bold text-cyan-400 mb-2">Defeat the Boss</h3>
-                  <p className="text-gray-400 text-sm md:text-base leading-relaxed">Defeat the final boss and claim your legendary item 67 reward in the spectacular battle.</p>
+                  <h3 className="font-bold text-cyan-400 mb-2">Steal or Trade When Possible</h3>
+                  <p className="text-gray-400 text-sm md:text-base leading-relaxed">67 can also appear through stealing or special event routes, so keep the page focused on current sources instead of fake codes.</p>
                 </div>
               </div>
             </div>
@@ -270,9 +270,9 @@ export default function Home() {
           <section className="bg-black/40 border border-cyan-500/30 rounded-lg p-8 md:p-10 mb-16">
             <h2 className="text-2xl md:text-3xl font-black text-cyan-400 mb-4">About Steal Brainrot</h2>
             <p className="text-gray-300 leading-relaxed mb-4">
-              Steal Brainrot is a fast-paced, browser-based meme collection game where you explore, trade, and battle to complete your collection.
-              In Steal Brainrot 67, your quest centers on unlocking the legendary item 67 while mastering puzzles and boss fights. Whether you are
-              brand new to <strong>steal brainrot</strong> or a veteran chasing perfect runs, you can play instantly on any device-no download required.
+              Steal Brainrot is a chaotic Roblox base game where you buy Brainrots, steal from other players, generate money, rebirth, and unlock gear.
+              On this site, the focus is the rare item 67 plus the systems players search most: Lucky Blocks, events, income, item stats, and codes. Whether you are
+              brand new to <Link href="/steal-brainrot" className="text-cyan-400 hover:text-cyan-300 font-semibold">steal brainrot</Link> or a veteran chasing perfect runs, you can play instantly on any device-no download required.
             </p>
             <p className="text-gray-300 leading-relaxed">
               Play <strong>steal brainrot</strong> free online, discover rare items, and team up with friends to climb the leaderboard. Our
@@ -318,8 +318,8 @@ export default function Home() {
                 '@context': 'https://schema.org',
                 '@type': 'FAQPage',
                 mainEntity: [
-                  { '@type': 'Question', name: 'How to get 67?', acceptedAnswer: { '@type': 'Answer', text: 'Reach mid-game, farm during Admin Abuse/Taco Tuesday, then buy Admin Lucky Blocks and roll for 67 (~0.25%).' } },
-                  { '@type': 'Question', name: 'What is the 67 drop rate?', acceptedAnswer: { '@type': 'Answer', text: 'Community reports ~0.25% from Admin Lucky Blocks; subject to change.' } },
+                  { '@type': 'Question', name: 'How to get 67?', acceptedAnswer: { '@type': 'Answer', text: "Farm cash, play events, then buy Admin Lucky Blocks when available. Community sources also list Sammy's Base Event and stealing as possible routes." } },
+                  { '@type': 'Question', name: 'What is the 67 drop rate?', acceptedAnswer: { '@type': 'Answer', text: 'Community tables list about 1.5% from Admin Lucky Blocks, also described as 1 in 67 by the community wiki. Verify in-game because updates can change rates.' } },
                   { '@type': 'Question', name: 'What is the fastest way to get 67?', acceptedAnswer: { '@type': 'Answer', text: 'Play during Admin Abuse and Taco Tuesday, use a private server, pre-farm budget, then roll blocks efficiently.' } }
                 ]
               })

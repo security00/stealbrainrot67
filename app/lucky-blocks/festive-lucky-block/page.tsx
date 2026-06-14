@@ -10,7 +10,7 @@ import { getVideos } from '../../../data/videos';
 export const metadata: Metadata = {
   title: 'Festive Lucky Block - Cost & Drops | Steal Brainrot',
   description:
-    'Festive Lucky Block details for the Christmas update: $500M cost, festive rarity, leaked drops, and how to prep via Christmas/Admin Abuse/7-day login.',
+    'Festive Lucky Block notes for Steal a Brainrot: current community-reported $400M / 799 Robux cost, seasonal availability, and older leaked drop-table notes.',
   keywords: [
     'festive lucky block',
     'steal a brainrot festive lucky block',
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     'how to get festive lucky block'
   ].join(', '),
   openGraph: {
-    title: 'Festive Lucky Block - Cost, Drops & Release Window',
+    title: 'Festive Lucky Block - Cost, Drops & Seasonal Notes',
     description:
-      'What we know about the Festive Lucky Block: $500M cost, festive rarity, leaked model, rumored drop table, and preparation tips.',
+      'Community-reported Festive Lucky Block cost, seasonal availability, and historical leaked drop-table notes.',
     url: 'https://stealbrainrot67.com/lucky-blocks/festive-lucky-block',
     type: 'article'
   },
@@ -45,9 +45,9 @@ export default function FestiveLuckyBlock() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Festive Lucky Block - Cost, Drops & Release Window',
+    headline: 'Festive Lucky Block - Cost, Drops & Seasonal Notes',
     description:
-      'Festive Lucky Block details from the Christmas update: $500M cost, festive rarity, leak notes, rumored drops, and how to prepare.',
+      'Festive Lucky Block details from current community tables plus historical leak notes.',
     mainEntityOfPage: 'https://stealbrainrot67.com/lucky-blocks/festive-lucky-block',
     datePublished: new Date().toISOString()
   } as const;
@@ -61,7 +61,7 @@ export default function FestiveLuckyBlock() {
         name: 'When does the Festive Lucky Block release?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'It is listed as upcoming for the Christmas update and can also appear during Admin Abuse or 7-day login rewards once live.'
+          text: 'Recent community tables list the Festive Lucky Block as a seasonal Christmas event block. Availability can rotate, so verify in-game.'
         }
       },
       {
@@ -69,7 +69,7 @@ export default function FestiveLuckyBlock() {
         name: 'How much does the Festive Lucky Block cost?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The leaked infobox shows a $500M cost with festive rarity and no ritual requirement.'
+          text: 'Recent community tables list the Festive Lucky Block at $400M / 799 Robux. Older leak notes used $500M, so verify in-game.'
         }
       },
       {
@@ -77,7 +77,7 @@ export default function FestiveLuckyBlock() {
         name: 'What are the leaked drops?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The leaked table lists La Vacca Presento Natalina (74%), Santa Chicleteira (25%), and La Ginger Sekolah (1%); all are still unconfirmed.'
+          text: 'Older leaked tables listed La Vacca Presento Natalina, Santa Chicleteira, and La Ginger Sekolah. Newer community tables use a broader seasonal pool, so treat older numbers as historical.'
         }
       }
     ]
@@ -97,17 +97,18 @@ export default function FestiveLuckyBlock() {
 
           <h1 className="text-3xl md:text-5xl font-black neon-text mb-3">Festive Lucky Block</h1>
           <p className="text-gray-300 mb-6">
-            $500M festive rarity Lucky Block leaked for the Christmas update (shown on Caylus&apos;s 11/29/25 stream).
-            Listed as <strong>upcoming</strong> and obtainable via Christmas, Admin Abuse, or 7-day login once released.
-            This page summarizes every known Festive Lucky Block detail, so you can prepare before the event starts.
+            Recent community tables list the Festive Lucky Block at <strong>$400M / 799 Robux</strong> as a seasonal
+            Christmas block. This page keeps the older leaked notes below for reference, but the broader
+            <Link href="/lucky-blocks" className="text-cyan-400 hover:underline"> Lucky Blocks guide</Link>
+            {' '}should be treated as the current overview.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
             {[
-              { label: 'Cost', value: '$500M' },
+              { label: 'Cost', value: '$400M / 799 Robux' },
               { label: 'Rarity', value: 'Festive' },
               { label: 'Has ritual?', value: 'No' },
-              { label: 'Status', value: 'Upcoming / event-limited' },
+              { label: 'Status', value: 'Seasonal / verify in-game' },
             ].map(card => (
               <div key={card.label} className="bg-black/50 border border-cyan-500/40 rounded-lg p-4">
                 <div className="text-sm text-gray-400">{card.label}</div>
@@ -119,9 +120,9 @@ export default function FestiveLuckyBlock() {
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-cyan-400 mb-3">Festive Lucky Block Release & How to Get It</h2>
             <ul className="list-disc pl-6 text-gray-300 space-y-2">
-              <li>Scheduled for the Christmas update; originally leaked on 11/29/25 (SpyderSammy on Caylus&apos;s stream).</li>
-              <li>The Festive Lucky Block is expected via Christmas event, Admin Abuse rotations, and possible 7-day login reward.</li>
-              <li>Prep tips: hold $500M+ cash, clear inventory, and stack multipliers before the Festive Lucky Block window starts.</li>
+              <li>Recent community tables list the Festive Lucky Block as a Christmas seasonal block.</li>
+              <li>Older leak notes mentioned Admin Abuse rotations and login rewards; treat those as historical until verified in-game.</li>
+              <li>Prep tips: hold at least $400M+ cash, clear inventory, and stack income before the Festive Lucky Block window starts.</li>
             </ul>
           </section>
 
@@ -134,8 +135,8 @@ export default function FestiveLuckyBlock() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-2xl font-bold text-cyan-400 mb-3">Rumored Drop Table (Unconfirmed)</h2>
-            <p className="text-gray-400 text-sm mb-3">From the leaked infobox; numbers may change on release. Treat all Festive Lucky Block drop rates as provisional.</p>
+            <h2 className="text-2xl font-bold text-cyan-400 mb-3">Older Leaked Drop Table (Historical)</h2>
+            <p className="text-gray-400 text-sm mb-3">This older table is kept for historical context. Newer community tables show a broader Festive pool, so verify the live game before relying on these rates.</p>
             <div className="overflow-x-auto">
               <table className="w-full text-left text-sm text-gray-300 border border-cyan-500/30">
                 <thead className="bg-black/40">
@@ -181,7 +182,7 @@ export default function FestiveLuckyBlock() {
               <li>Use Admin Abuse windows to stock cash before Christmas spawns begin.</li>
               <li>Jump in early during event start; high-demand drops will sell fast in trading hubs.</li>
               <li>Keep inventory slots open and track timers so you don&apos;t miss reroll chances.</li>
-              <li>Pair with existing income boosters (e.g., Taco Tuesday multipliers) to recover the $500M cost faster.</li>
+              <li>Pair with existing income boosters to recover the reported $400M cost faster.</li>
             </ul>
           </section>
 
@@ -190,11 +191,11 @@ export default function FestiveLuckyBlock() {
             <div className="space-y-4 text-gray-300">
               <div>
                 <p className="font-semibold text-cyan-300">Is the drop table confirmed?</p>
-                <p className="text-gray-300">No. All numbers above come from the leaked infobox and may change on release.</p>
+                <p className="text-gray-300">No. The older table is historical, and newer community tables differ. Verify in-game.</p>
               </div>
               <div>
                 <p className="font-semibold text-cyan-300">Can I get it outside Christmas?</p>
-                <p className="text-gray-300">The infobox lists Admin Abuse and a 7-day login option, so watch for those rotations.</p>
+                <p className="text-gray-300">Recent tables treat it as seasonal. Admin Abuse or login references should be checked in the live game.</p>
               </div>
               <div>
                 <p className="font-semibold text-cyan-300">Is there a ritual?</p>
@@ -235,6 +236,7 @@ export default function FestiveLuckyBlock() {
 
           <div className="mt-6 flex flex-wrap gap-3">
             <Link href="/" className="text-cyan-400 hover:underline">Play Steal Brainrot 67 -&gt;</Link>
+            <Link href="/lucky-blocks" className="text-cyan-400 hover:underline">All Lucky Blocks -&gt;</Link>
             <Link href="/items/67" className="text-cyan-400 hover:underline">View item 67 stats -&gt;</Link>
           </div>
         </div>

@@ -42,7 +42,7 @@ export default function Terms() {
               <div>
                 <h2 className="text-2xl font-bold text-cyan-400 mb-3">3. User Conduct</h2>
                 <p>
-                  You agree not to use the game for illegal purposes, to harass or harm other players, share another's password,
+                  You agree not to use the game for illegal purposes, to harass or harm other players, share another&apos;s password,
                   cheat or use exploits, spam, or violate any laws or regulations.
                 </p>
               </div>
@@ -50,7 +50,7 @@ export default function Terms() {
               <div>
                 <h2 className="text-2xl font-bold text-cyan-400 mb-3">4. Age Restriction</h2>
                 <p>
-                  You must be at least 13 years old to use this game. If you're younger, you need parental consent.
+                  You must be at least 13 years old to use this game. If you&apos;re younger, you need parental consent.
                   We reserve the right to verify age and suspend accounts that violate this requirement.
                 </p>
               </div>
@@ -82,7 +82,7 @@ export default function Terms() {
               <div>
                 <h2 className="text-2xl font-bold text-cyan-400 mb-3">8. Disclaimer of Warranties</h2>
                 <p>
-                  The game is provided "as is" without warranties of any kind. We do not guarantee the game will be error-free,
+                  The game is provided &quot;as is&quot; without warranties of any kind. We do not guarantee the game will be error-free,
                   uninterrupted, or meet your specific needs. Play at your own risk.
                 </p>
               </div>

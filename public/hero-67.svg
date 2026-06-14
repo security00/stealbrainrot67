@@ -26,8 +26,8 @@
   <g transform="translate(160 220)">
     <rect x="0" y="0" width="260" height="260" rx="26" fill="#0f172a" opacity="0.75" stroke="#39d2ff" stroke-width="3"/>
     <text x="30" y="80" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700" fill="#39d2ff">Item 67</text>
-    <text x="30" y="120" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="500" fill="#e2e8f0">Drop rate: ~0.25%</text>
+    <text x="30" y="120" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="500" fill="#e2e8f0">Drop rate: ~1.5% community</text>
     <text x="30" y="150" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="500" fill="#e2e8f0">Income: $7.5M/s</text>
-    <text x="30" y="180" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="500" fill="#e2e8f0">Source: Admin Lucky Blocks</text>
+    <text x="30" y="180" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="500" fill="#e2e8f0">Source: Admin Lucky Block</text>
   </g>
 </svg>

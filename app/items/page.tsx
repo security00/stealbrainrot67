@@ -27,7 +27,7 @@ export default function ItemsIndex() {
           <p className="text-gray-500 text-xs mb-6">Last verified: {items[0]?.lastVerified}</p>
           <div className="bg-black/40 border border-cyan-500/40 rounded-lg p-4 mb-6">
             <p className="text-sm text-gray-300">
-              Tracking event blocks? See the <Link href="/lucky-blocks/festive-lucky-block" className="text-cyan-400 hover:underline">Festive Lucky Block</Link> release notes and leaked drop table.
+              Tracking event blocks? Start with the <Link href="/lucky-blocks" className="text-cyan-400 hover:underline">Lucky Blocks guide</Link> for current community-reported costs, then use individual block pages for historical notes.
             </p>
           </div>
 

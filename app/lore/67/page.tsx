@@ -91,8 +91,8 @@ export default function Lore67() {
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-cyan-400 mb-3">The Candle and the Note</h2>
             <p className="text-gray-300">
-              Near the player base, a lit candle and a short note - "I wish we were more" - hint at 67's solitude
-              and identity. Fans read this as the seed of 67's motivation.
+              Near the player base, a lit candle and a short note - &quot;I wish we were more&quot; - hint at 67&apos;s solitude
+              and identity. Fans read this as the seed of 67&apos;s motivation.
             </p>
           </section>
 
@@ -116,8 +116,8 @@ export default function Lore67() {
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-cyan-400 mb-3">The Hidden Chamber</h2>
             <p className="text-gray-300">
-              Past the hatch, accounts mention a secret area and a confrontation that tries to keep 67's truth buried.
-              Escaping leads deeper - toward a scientist, and to 67's confession of loneliness as the only numbered
+              Past the hatch, accounts mention a secret area and a confrontation that tries to keep 67&apos;s truth buried.
+              Escaping leads deeper - toward a scientist, and to 67&apos;s confession of loneliness as the only numbered
               being among brainrots.
             </p>
           </section>
@@ -126,7 +126,7 @@ export default function Lore67() {
             <h2 className="text-2xl font-bold text-cyan-400 mb-3">Lost 67s</h2>
             <p className="text-gray-300">
               The scientist machine symbolizes a hope to end solitude - if it worked, there would be more like 67:
-              the "Lost 67s". Different tellings vary in detail, but the message resonates: identity, belonging,
+              the &quot;Lost 67s&quot;. Different tellings vary in detail, but the message resonates: identity, belonging,
               and a fresh start.
             </p>
           </section>

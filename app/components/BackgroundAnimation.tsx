@@ -1,61 +1,29 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+const squares = Array.from({ length: 15 }, (_, id) => ({
+  id,
+  left: (id * 17 + 11) % 100,
+  top: (id * 29 + 7) % 100,
+  delay: id * 0.3,
+}));
+
+const pixels = Array.from({ length: 20 }, (_, id) => ({
+  id,
+  left: (id * 23 + 5) % 100,
+  top: (id * 31 + 13) % 100,
+  opacity: 0.12 + ((id * 7) % 30) / 100,
+  delay: id * 0.2,
+}));
 
 export default function BackgroundAnimation() {
-  const [mounted, setMounted] = useState(false);
-  const [squares, setSquares] = useState<Array<{ id: number; left: number; top: number; delay: number }>>([]);
-  const [pixels, setPixels] = useState<Array<{ id: number; left: number; top: number; opacity: number; delay: number }>>([]);
-
-  useEffect(() => {
-    // Generate squares
-    setSquares(
-      [...Array(15)].map((_, i) => ({
-        id: i,
-        left: Math.random() * 100,
-        top: Math.random() * 100,
-        delay: i * 0.3,
-      }))
-    );
-
-    // Generate pixels
-    setPixels(
-      [...Array(20)].map((_, i) => ({
-        id: i,
-        left: Math.random() * 100,
-        top: Math.random() * 100,
-        opacity: Math.random() * 0.5,
-        delay: i * 0.2,
-      }))
-    );
-
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return (
-      <div className="fixed inset-0 -z-10 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-black to-purple-900/40"></div>
-        <div className="absolute inset-0 opacity-20" aria-hidden="true">
-          {/* Decorative grid via CSS background to avoid <svg> being flagged as image */}
-          <div className="w-full h-full bg-grid" />
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden">
-      {/* Gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-black to-purple-900/40"></div>
 
-      {/* Animated grid */}
       <div className="absolute inset-0 opacity-20" aria-hidden="true">
-        {/* Decorative grid via CSS background to avoid <svg> being flagged as image */}
         <div className="w-full h-full bg-grid" />
       </div>
 
-      {/* Floating squares (meme wall effect) */}
       <div className="absolute inset-0">
         {squares.map((square) => (
           <div
@@ -71,7 +39,6 @@ export default function BackgroundAnimation() {
         ))}
       </div>
 
-      {/* Pixel effects */}
       <div className="absolute inset-0 opacity-10">
         {pixels.map((pixel) => (
           <div

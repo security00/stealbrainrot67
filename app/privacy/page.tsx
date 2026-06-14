@@ -50,7 +50,7 @@ export default function Privacy() {
               <div>
                 <h2 className="text-2xl font-bold text-cyan-400 mb-3">4. Third-Party Services</h2>
                 <p>
-                  We use Google AdSense for advertising. Google's advertising partners may collect data about your browsing habits.
+                  We use Google AdSense for advertising. Google&apos;s advertising partners may collect data about your browsing habits.
                   Please review their privacy policies for more information about their data practices.
                 </p>
               </div>
@@ -64,17 +64,17 @@ export default function Privacy() {
               </div>
 
               <div>
-                <h2 className="text-2xl font-bold text-cyan-400 mb-3">6. Children's Privacy</h2>
+                <h2 className="text-2xl font-bold text-cyan-400 mb-3">6. Children&apos;s Privacy</h2>
                 <p>
                   Our game is intended for users aged 13 and above. We do not knowingly collect information from children under 13.
-                  If we learn we've collected such information, we'll delete it promptly.
+                  If we learn we&apos;ve collected such information, we&apos;ll delete it promptly.
                 </p>
               </div>
 
               <div>
                 <h2 className="text-2xl font-bold text-cyan-400 mb-3">7. Policy Changes</h2>
                 <p>
-                  We may update this policy occasionally. We'll notify you of significant changes via email or prominent notice on our website.
+                  We may update this policy occasionally. We&apos;ll notify you of significant changes via email or prominent notice on our website.
                   Continued use of the game constitutes acceptance of updated policies.
                 </p>
               </div>

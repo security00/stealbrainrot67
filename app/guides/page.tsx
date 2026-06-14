@@ -1,188 +1,160 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import BackgroundAnimation from '../components/BackgroundAnimation';
 
 export const metadata: Metadata = {
-  title: 'Steal Brainrot 67 Guides & Tips - Strategies',
-  description: 'Complete guides and tips for Steal Brainrot 67. Learn how to collect all items, unlock item 67, complete challenges, and master the game strategies.',
-  keywords: 'steal brainrot, steal brainrot 67, brainrot 67, guides, tips, walkthrough, item 67 guide',
+  title: 'Steal Brainrot Guides - 67, Lucky Blocks, Items & Beginner Tips',
+  description:
+    'Steal Brainrot guide index for beginner strategy, Lucky Blocks, item stats, 67 routes, code warnings, and Roblox gameplay basics.',
+  keywords: [
+    'steal brainrot guides',
+    'steal brainrot 67 guide',
+    'how to get 67',
+    'lucky blocks guide',
+    'steal a brainrot tips',
+  ].join(', '),
   openGraph: {
-    title: 'Steal Brainrot 67 Guides & Tips - Strategies',
-    description: 'Complete guides and tips for Steal Brainrot 67. Learn game strategies and unlock legendary items.',
+    title: 'Steal Brainrot Guides - 67, Lucky Blocks, Items & Beginner Tips',
+    description:
+      'Current Steal Brainrot guide index for 67 routes, Lucky Blocks, item stats, beginner strategy, and code warnings.',
     url: 'https://stealbrainrot67.com/guides',
     type: 'website',
   },
   alternates: {
     canonical: 'https://stealbrainrot67.com/guides',
-  }
+  },
 };
 
-export default function Guides() {
-  const guides = [
-    {
-      title: 'Beginner\'s Guide - Getting Started',
-      content: 'Start your meme collection journey with these essential tips. Learn the basic controls, understand the game mechanics, explore the starting village, and collect your first meme items. This guide covers everything you need to know in the first 30 minutes of gameplay.',
-      tips: [
-        'Click on objects to collect items and interact with the environment',
-        'Use the inventory system to manage your collected memes efficiently',
-        'Visit the tutorial area first to unlock basic rewards and achievements',
-        'Collect all starting items for bonus experience points and coins',
-        'Talk to NPCs to unlock side quests and special events'
-      ]
-    },
-    {
-      title: 'Item Collection Complete List',
-      content: 'Discover all 50+ rare meme items in Steal Brainrot 67. Each item has unique properties and collection value. This comprehensive guide lists all items, their rarity levels, locations, and collection requirements. Master the art of meme gathering.',
-      tips: [
-        'Common items: Found in starting areas, easy to collect, good for beginners',
-        'Rare items: Located in dungeons, require special keys or achievements to obtain',
-        'Legendary items: Only 5 exist, hidden in secret locations requiring puzzle solving',
-        'Item 67: The ultimate legendary item, requires completing all major story quests',
-        'Track your collection progress in the inventory to find missing items'
-      ]
-    },
-    {
-      title: 'How to Unlock Item 67 - Complete Walkthrough',
-      content: 'This is the ultimate guide to obtaining the legendary item 67. Follow our step-by-step instructions to reach the final boss battle and claim your prize. The path to greatness starts here.',
-      tips: [
-        'Complete all main story quests to reach level 20 minimum',
-        'Collect 30 different rare items from various locations throughout the map',
-        'Solve the ancient puzzle in the Meme Temple using collected item clues',
-        'Defeat the Brainrot Guardian boss in an epic final battle',
-        'Claim your legendary item 67 trophy and unlock special abilities'
-      ]
-    },
-    {
-      title: 'Daily Challenges & Daily Quests',
-      content: 'Maximize your rewards by completing daily challenges. These tasks reset every 24 hours and provide exclusive rewards, bonus experience, and climbing the global leaderboard opportunities. Learn strategies to complete challenges efficiently.',
-      tips: [
-        'Log in daily for cumulative bonuses and streak multipliers',
-        'Complete at least 3 daily quests for maximum reward potential',
-        'Focus on challenge objectives that match your current collection needs',
-        'Weekly challenges offer rare items and special cosmetics as rewards',
-        'Seasonal events provide limited-time exclusive items and achievements'
-      ]
-    },
-    {
-      title: 'Advanced Strategies - Pro Tips',
-      content: 'Master the game with advanced strategies used by top players. Learn time management, resource optimization, and battle tactics. Climb the leaderboard and prove your skills with these pro-level techniques.',
-      tips: [
-        'Prioritize collecting items that unlock hidden areas with more rare items',
-        'Use the fast travel system to optimize your farming routes and save time',
-        'Trade with other players strategically to complete your collection faster',
-        'Master boss attack patterns to defeat them with minimal resource usage',
-        'Participate in seasonal tournaments to earn exclusive rewards and titles'
-      ]
-    },
-    {
-      title: 'Multiplayer Guide - Trading & Battles',
-      content: 'Connect with other players worldwide. Learn trading strategies, participate in multiplayer battles, and join player factions. Teamwork makes the dream work in Steal Brainrot 67\'s social economy.',
-      tips: [
-        'Build a trade network with other collectors for better deals and exchanges',
-        'Join a faction to participate in group events and earn faction-exclusive rewards',
-        'Challenge other players to 1v1 battles for bragging rights and rare items',
-        'Participate in global events and community tournaments for special rewards',
-        'Help new players and earn mentor badges for helping the community grow'
-      ]
-    }
-  ];
+const guides = [
+  {
+    title: 'Steal Brainrot Hub',
+    content:
+      'Start here if you searched the main keyword. This page explains the official buy, steal, earn, Rebirth, and gear loop before sending you into specific systems.',
+    href: '/steal-brainrot',
+    label: 'Open hub',
+    tips: [
+      'Best for broad search intent.',
+      'Covers gameplay basics and source notes.',
+      'Links into items, Lucky Blocks, and 67 routes.',
+    ],
+  },
+  {
+    title: 'How to Get 67',
+    content:
+      'Focused route for 67 with current community-reported sources, Admin Lucky Block odds, Sammy\'s Base Event notes, stealing routes, and code warnings.',
+    href: '/guides/how-to-get-67',
+    label: 'Read 67 guide',
+    tips: [
+      '67 is listed as a Secret Brainrot.',
+      'Community sources list $1.25B cost and $7.5M/s income.',
+      'Drop rates are update-sensitive, so verify in-game.',
+    ],
+  },
+  {
+    title: 'Lucky Blocks',
+    content:
+      'Overview of regular, Admin Abuse, Taco Tuesday, and seasonal Lucky Blocks with reported costs and availability notes.',
+    href: '/lucky-blocks',
+    label: 'Read Lucky Blocks',
+    tips: [
+      'Admin Lucky Block is the key 67 route.',
+      'Lucky Blocks do not generate money before opening.',
+      'Some blocks are event-only or region-restricted.',
+    ],
+  },
+  {
+    title: 'Item Database',
+    content:
+      'Compare Brainrot cost, income, source, rarity, drop rate, and ROI from the site item table.',
+    href: '/items',
+    label: 'Browse items',
+    tips: [
+      'Use item pages for exact stats.',
+      'Check source labels before planning a route.',
+      'Use ROI only as a directional comparison.',
+    ],
+  },
+] as const;
 
+export default function Guides() {
   return (
     <>
       <BackgroundAnimation />
       <Header />
 
       <main className="min-h-screen pt-24 pb-8 px-4 relative z-10">
-        <div className="max-w-4xl mx-auto">
-          {/* Header */}
+        <div className="max-w-5xl mx-auto">
           <section className="text-center mb-12 mt-8">
-            <h1 className="text-5xl md:text-6xl font-black neon-text mb-4">
+            <h1 className="text-4xl md:text-6xl font-black neon-text mb-4">
               STEAL BRAINROT GUIDES
             </h1>
             <p className="text-gray-400 max-w-2xl mx-auto text-lg">
-              Master <strong>steal brainrot</strong> and <strong>steal brainrot 67</strong> with our comprehensive guides, tips, and strategies.
-              These <strong>steal brainrot 67</strong> walkthroughs cover beginner to pro routes so you unlock item 67 faster.
+              Current guide entry points for <strong>steal brainrot</strong>, <strong>item 67</strong>,
+              Lucky Blocks, and item stats. These pages are written as update-sensitive guides, not fixed lore.
             </p>
           </section>
 
-          {/* Guides Grid */}
-          <div className="space-y-8 mb-16">
-            {guides.map((guide, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+            {guides.map((guide) => (
               <article
-                key={index}
-                className="bg-purple-900/20 border border-cyan-500/50 rounded-lg p-8 hover:border-cyan-400 transition-colors"
+                key={guide.title}
+                className="bg-purple-900/20 border border-cyan-500/50 rounded-lg p-6 md:p-8 hover:border-cyan-400 transition-colors"
               >
-                <h2 className="text-2xl md:text-3xl font-bold text-cyan-400 mb-4">
+                <h2 className="text-2xl font-bold text-cyan-400 mb-4">
                   {guide.title}
                 </h2>
-                <p className="text-gray-400 mb-6 leading-relaxed">
+                <p className="text-gray-300 mb-5 leading-relaxed">
                   {guide.content}
                 </p>
-                <div className="bg-black/40 rounded-lg p-6">
-                  <h3 className="text-lg font-bold text-purple-400 mb-4">
-                    ✨ Key Tips:
+                <div className="bg-black/40 rounded-lg p-5 mb-5">
+                  <h3 className="text-lg font-bold text-purple-400 mb-3">
+                    Key Notes
                   </h3>
-                  <ul className="space-y-3">
-                    {guide.tips.map((tip, tipIndex) => (
-                      <li key={tipIndex} className="flex gap-3 text-gray-300">
-                        <span className="text-cyan-400 font-bold flex-shrink-0">•</span>
+                  <ul className="space-y-2">
+                    {guide.tips.map((tip) => (
+                      <li key={tip} className="flex gap-3 text-gray-300">
+                        <span className="text-cyan-400 font-bold flex-shrink-0">-</span>
                         <span>{tip}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
+                <Link href={guide.href} className="text-cyan-400 hover:underline font-semibold">
+                  {guide.label} -&gt;
+                </Link>
               </article>
             ))}
           </div>
 
-          {/* FAQ Section */}
-          <section className="bg-purple-900/20 border border-purple-500/50 rounded-lg p-8 mb-16">
-            <h2 className="text-3xl font-bold text-purple-400 mb-8">❓ Frequently Asked Questions</h2>
-
-            <div className="space-y-6">
-              {[
-                {
-                  q: 'Is Steal Brainrot 67 free to play?',
-                  a: 'Yes! The game is completely free. No pay-to-win mechanics. All content is accessible without spending money.'
-                },
-                {
-                  q: 'How long does it take to reach item 67?',
-                  a: 'Average playtime is 20-40 hours depending on your skill level and playstyle. Casual players might take longer, speedrunners less.'
-                },
-                {
-                  q: 'Can I trade items with other players?',
-                  a: 'Yes, multiplayer trading is available once you reach level 5. Visit the Trading Post to exchange items with other collectors.'
-                },
-                {
-                  q: 'Are there mobile and PC versions?',
-                  a: 'The game runs in your browser on any device. No separate downloads needed for mobile or PC - just visit the website!'
-                },
-                {
-                  q: 'How do I report bugs or suggest features?',
-                  a: 'Contact us at support@stealbrainrot67.com with detailed information. Community feedback helps us improve the game.'
-                }
-              ].map((faq, index) => (
-                <div key={index} className="border-l-2 border-cyan-500 pl-4">
-                  <h3 className="text-lg font-bold text-cyan-400 mb-2">{faq.q}</h3>
-                  <p className="text-gray-400">{faq.a}</p>
-                </div>
-              ))}
+          <section className="bg-purple-900/20 border border-purple-500/50 rounded-lg p-6 md:p-8 mb-16">
+            <h2 className="text-3xl font-bold text-purple-400 mb-6">Guide Policy</h2>
+            <div className="space-y-4 text-gray-300">
+              <p>
+                Steal Brainrot changes through updates and events, so route pages should show the checked date,
+                distinguish official gameplay from community data, and avoid fake code promises.
+              </p>
+              <p>
+                For the next restart cycle, the strongest content path is:
+                <Link href="/steal-brainrot" className="text-cyan-400 hover:underline"> main keyword hub</Link>,
+                {' '}then <Link href="/lucky-blocks" className="text-cyan-400 hover:underline">Lucky Blocks</Link>,
+                {' '}then <Link href="/guides/how-to-get-67" className="text-cyan-400 hover:underline">67 route</Link>.
+              </p>
             </div>
           </section>
 
-          {/* CTA */}
           <section className="text-center py-12">
-            <h2 className="text-3xl font-bold neon-text mb-6">Ready to Master the Game?</h2>
+            <h2 className="text-3xl font-bold neon-text mb-6">Ready to Test the Route?</h2>
             <p className="text-gray-400 mb-8 max-w-xl mx-auto">
-              Use these guides to level up your skills and unlock all secrets. Start playing now!
+              Start with the embedded game entry, then come back to the guides when you need exact item or block data.
             </p>
-            <a
+            <Link
               href="/"
               className="inline-block bg-cyan-500 hover:bg-cyan-600 text-black font-bold px-8 py-4 rounded-lg transition-colors text-lg"
             >
-              🎮 Play Now
-            </a>
+              Play Now
+            </Link>
           </section>
         </div>
       </main>

@@ -4,12 +4,12 @@ export type Item = {
   aliases?: string[];
   source?: string;
   rarity?: string;
-  costText?: string;     // e.g., 1.2B
+  costText?: string;     // e.g., 1.25B
   cost?: number;         // in dollars
   incomeText?: string;   // e.g., 7.5M / s
   incomePerSecond?: number; // numeric per second
-  dropRateText?: string; // e.g., 0.25%
-  dropRate?: number;     // numeric fraction, e.g., 0.0025
+  dropRateText?: string; // e.g., 1.5%
+  dropRate?: number;     // numeric fraction, e.g., 0.015
   lastVerified?: string;
 };
 
@@ -41,14 +41,14 @@ export function roiHuman(seconds?: number): string {
 
 const today = new Date().toISOString().slice(0, 10);
 
-export function slugify(s: any): string {
+export function slugify(s: unknown): string {
   const v = (s ?? '').toString();
   return v.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 }
 
 // Known drop rates (fraction)
 const dropRates: Record<string, number> = {
-  '67': 0.0025,
+  '67': 0.015,
   'Guerriro Digitale': 0.0075,
   'La Grande Combinasion': 0.01,
   'Los Spyderinis': 0.03,
@@ -60,10 +60,16 @@ const dropRates: Record<string, number> = {
   'Carloo': 0.30,
 };
 
+function percentText(p: number): string {
+  const pct = p * 100;
+  if (pct < 1) return `${pct.toFixed(2)}%`;
+  return `${Number.isInteger(pct) ? pct.toFixed(0) : pct.toFixed(1)}%`;
+}
+
 function dr(name: string): {dropRate?: number, dropRateText?: string} {
   if (dropRates[name] !== undefined) {
     const p = dropRates[name];
-    return { dropRate: p, dropRateText: `${(p*100).toFixed(p*100 < 1 ? 2 : 0)}%` };
+    return { dropRate: p, dropRateText: percentText(p) };
   }
   return {};
 }
@@ -128,7 +134,7 @@ export const items: Item[] = [
   item({ name: 'Spaghetti Tualetti', costText: '750M', cost: m(750), incomeText: '60M / s', incomePerSecond: m(60) }),
   item({ name: 'Agarrini la Palini', costText: '80M', cost: m(80), incomeText: '425k / s', incomePerSecond: 425_000 }),
   item({ name: 'Los Noo My Hotspotsitos', costText: '1B', cost: b(1), incomeText: '5M / s', incomePerSecond: m(5) }),
-  item({ name: '67', aliases: ['67 Brainrot'], costText: '1.2B', cost: b(1.2), incomeText: '7.5M / s', incomePerSecond: m(7.5), source: 'Admin Lucky Blocks', rarity: 'Secret' }),
+  item({ name: '67', aliases: ['67 Brainrot'], costText: '1.25B', cost: b(1.25), incomeText: '7.5M / s', incomePerSecond: m(7.5), source: "Admin Lucky Block / Sammy's Base Event / Stealing", rarity: 'Secret' }),
   item({ name: 'Los Chicleteiras', costText: '1.2B', cost: b(1.2), incomeText: '7M / s', incomePerSecond: m(7) }),
   item({ name: 'Los Combinasionas', costText: '2B', cost: b(2), incomeText: '15M / s', incomePerSecond: m(15) }),
   item({ name: 'Los Bros', costText: '2.6B', cost: b(2.6), incomeText: '24M / s', incomePerSecond: m(24) }),
@@ -147,7 +153,6 @@ export function findBySlug(slug: string): Item | undefined {
   const t = slugify(slug);
   return items.find(i => slugify(i.id) === t || slugify(i.name) === t || (i.aliases || []).some(a => slugify(a) === t));
 }
-
 
 
 
