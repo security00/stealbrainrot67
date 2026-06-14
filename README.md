@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Steal Brainrot 67
 
-## Getting Started
+SEO-focused static Next.js site for stealbrainrot67.com. The site embeds a playable browser entry and supports search demand around Steal Brainrot 67, Lucky Blocks, item stats, and player guides.
 
-First, run the development server:
+## Stack
+
+- Next.js 16 static export
+- React 19
+- Tailwind CSS 4
+- Cloudflare Pages via GitHub Actions
+- Build output directory: `out`
+
+## Key Routes
+
+- `/`
+- `/steal-brainrot`
+- `/lucky-blocks`
+- `/guides/how-to-get-67`
+- `/items`
+- `/items/67`
+
+## Local Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Verification
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Run these before committing or deploying:
 
-## Learn More
+```bash
+npm audit
+npm run lint
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Push to `main`. `.github/workflows/deploy.yml` builds the static site and deploys `out` to the Cloudflare Pages project `stealbrainrot67`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## SEO Restart Notes
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- GSC baseline before restart: last 3 months had 93 clicks, 4.05K impressions, 2.3% CTR, and average position 16.5.
+- Main keyword gap: `steal brainrot` had trend demand but was not showing in GSC.
+- First restart release added `/steal-brainrot` and `/lucky-blocks`, updated the iframe, corrected 67 data, and rebuilt sitemap coverage.
+- Keep game/item data dated and conservative. If a source is not official, describe it as community-reported or currently observed.

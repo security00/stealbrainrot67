@@ -68,10 +68,20 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.youtube-nocookie.com" />
         <link rel="preconnect" href="https://i.ytimg.com" />
         <link rel="dns-prefetch" href="https://i.ytimg.com" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx"></script>
         <StructuredData />
+      </head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        suppressHydrationWarning
+      >
+        {children}
 
-        {/* Google Analytics */}
+        <Script
+          id="adsense"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx"
+          strategy="afterInteractive"
+          crossOrigin="anonymous"
+        />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-3EWX3Z73BN"
           strategy="afterInteractive"
@@ -88,8 +98,6 @@ export default function RootLayout({
             `,
           }}
         />
-
-        {/* Microsoft Clarity */}
         <Script
           id="microsoft-clarity"
           strategy="afterInteractive"
@@ -103,12 +111,6 @@ export default function RootLayout({
             `,
           }}
         />
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        suppressHydrationWarning
-      >
-        {children}
       </body>
     </html>
   );

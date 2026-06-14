@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import Script from 'next/script';
 import BackgroundAnimation from '../../components/BackgroundAnimation';
@@ -35,9 +36,9 @@ const media = {
 };
 
 const drops = [
-  { name: 'La Vacca Presento Natalina', income: '$600K / s', chance: '74%', status: 'Leaked (not confirmed)', img: media.laVacca },
-  { name: 'Santa Chicleteira', income: '$35M / s', chance: '25%', status: 'Leaked (not confirmed)', img: media.santa },
-  { name: 'La Ginger Sekolah', income: '$125M / s', chance: '1%', status: 'Leaked (not confirmed)', img: media.ginger },
+  { name: 'La Vacca Presento Natalina', income: '$600K / s', chance: '74%', status: 'Leaked (not confirmed)', img: media.laVacca, width: 126, height: 117 },
+  { name: 'Santa Chicleteira', income: '$35M / s', chance: '25%', status: 'Leaked (not confirmed)', img: media.santa, width: 177, height: 129 },
+  { name: 'La Ginger Sekolah', income: '$125M / s', chance: '1%', status: 'Leaked (not confirmed)', img: media.ginger, width: 156, height: 210 },
 ];
 
 export default function FestiveLuckyBlock() {
@@ -153,9 +154,11 @@ export default function FestiveLuckyBlock() {
                     <tr key={d.name} className="hover:bg-black/30">
                       <td className="p-2 border-b border-cyan-500/20">
                         {d.img && (
-                          <img
+                          <Image
                             src={d.img}
                             alt={d.name}
+                            width={d.width}
+                            height={d.height}
                             loading="lazy"
                             className="h-16 w-auto rounded border border-cyan-500/20 bg-black/40"
                           />

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -152,9 +153,11 @@ export default function Home() {
                 collectors worldwide and play <span className="mx-1 font-semibold text-cyan-300">steal a brainrot 67</span> right in your browser.
               </p>
               <div className="max-w-3xl mx-auto">
-                <img
+                <Image
                   src="/hero-67.svg"
                   alt="Steal a Brainrot 67 game preview with item 67 highlight"
+                  width={1200}
+                  height={630}
                   loading="lazy"
                   className="w-full rounded-lg border border-cyan-500/40 shadow-lg bg-black/40"
                 />
